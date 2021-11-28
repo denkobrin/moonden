@@ -1,1099 +1,1201 @@
  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0 !important;
-  }
-/* (reset) */
-
-/* open-sans-regular - latin */
-@font-face {
-   font-family: 'Open Sans';
-   font-style: normal;
-   font-weight: 400;
-   src: local(''),
-        url('../fonts/open-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/open-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ 	box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+ 	outline: 0 !important;
  }
+
+ /* (reset) */
+
+ /* open-sans-regular - latin */
+ @font-face {
+ 	font-family: 'Open Sans';
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	src: local(''),
+ 		url('../fonts/open-sans-v27-latin-regular.woff2') format('woff2'),
+ 		/* Chrome 26+, Opera 23+, Firefox 39+ */
+ 		url('../fonts/open-sans-v27-latin-regular.woff') format('woff');
+ 	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
  /* open-sans-700 - latin */
  @font-face {
-   font-family: 'Open Sans';
-   font-style: normal;
-   font-weight: 700;
-   src: local(''),
-        url('../fonts/open-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/open-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ 	font-family: 'Open Sans';
+ 	font-style: normal;
+ 	font-weight: 700;
+ 	src: local(''),
+ 		url('../fonts/open-sans-v27-latin-700.woff2') format('woff2'),
+ 		/* Chrome 26+, Opera 23+, Firefox 39+ */
+ 		url('../fonts/open-sans-v27-latin-700.woff') format('woff');
+ 	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
  }
+
  /* vollkorn-regular - latin */
-@font-face {
-   font-family: 'Vollkorn';
-   font-style: normal;
-   font-weight: 400;
-   src: local(''),
-        url('../fonts/vollkorn-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/vollkorn-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ @font-face {
+ 	font-family: 'Vollkorn';
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	src: local(''),
+ 		url('../fonts/vollkorn-v13-latin-regular.woff2') format('woff2'),
+ 		/* Chrome 26+, Opera 23+, Firefox 39+ */
+ 		url('../fonts/vollkorn-v13-latin-regular.woff') format('woff');
+ 	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
  }
 
 
-.main_conteiner {
-   background-image: url(../img/main_bg.png);
-   background-repeat: no-repeat;
-   background-size: 100%;
-   margin: 0 auto;
-   padding: 0 15px;
-   min-width: 1920px;
-   height: 100%;
-}
-.conteiner {
-   background-image: url(../img/backgorund_header_end.png),url(../img/backgorund_header.jpg);
-   background-size: 100%;
-   background-position:bottom center;
-   background-repeat: no-repeat,no-repeat;
-   min-height: 870px;
-   width: 100%;
-}
+ .main_conteiner {
+ 	background-image: url(../img/main_bg.png);
+ 	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	margin: 0 auto;
+ 	padding: 0 15px;
+ 	max-width: 1920px;
+ 	height: 100%;
+ }
 
-.header_1 {
-  min-width: 1170px;
-  min-height: 55px;
-  margin-left: 375px;
-  margin-right: 375px;
-  margin-top: 19px;
-  position: fixed;
-}
+ .conteiner {
+ 	background-image: url(../img/backgorund_header_end.png), url(../img/backgorund_header.jpg);
+ 	background-size: 100%;
+ 	background-position: bottom center;
+ 	background-repeat: no-repeat, no-repeat;
+ 	min-height: 870px;
+ 	width: 100%;
+ }
 
-
-.nav_header {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
-
-}
-#logo {
-   max-width: 122px;
-   max-height: 55px;
-}
-
-.contact_list {
-   display: flex;
-   margin-right: 111px;
-   margin-left: 79px;
-}
-.contact_ul {
-      display: flex;
-      flex-wrap: wrap;
-      color: #1F2125;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-
-   }
-.contact_item {
-   margin-right: 25px;
-   list-style-type: none;
-   color: #1F2125;
-}
-
-.contact_item_link {
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-letter-spacing: 0.01em;
-text-decoration: none;
-}
-
-.box_tel {
-   display: flex;
-   flex-direction: row;
-}
-.tel_button {
-   border: none;
-   border-radius: 50%;
-   background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
-   text-align: center;
-   text-decoration: none;
-   width: 32px;
-   height: 32px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-right: 10px;
-}
-.tel_img {
-   width: 18px;
-   height: 18px;
-   margin-top: 4px;
-   
-}
-
-.tel_number>a {
-   text-decoration: none;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 21px;
-   line-height: 29px;
-}
-a {
-   color: #1F2125;
-   font-size: 18px;
-}
-
-.heading {
-   padding-top: 177px;
-   text-align: center;
-}
-.heading>h1 {
-   font-family: Vollkorn;
-font-style: normal;
-font-weight: 600;
-font-size: 74px;
-line-height: 103px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #4D476F;
-}
-.heading>h3 {
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 21px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.01em;
-color: #4D476F;
-}
-
-.button_online {
-   margin: 40px;
-   width: 370px;
-   height: 60px;
-   background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
-border: 2px solid #7263E6;
-box-sizing: border-box;
-box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
-border-radius: 40px;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 29px;
-letter-spacing: 0.08em;
-color: #FFFFFF;
-}
-
-button:hover,button:focus {
-   background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
-border: 2px solid #7263E6;
-box-sizing: border-box;
-box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
-border-radius: 40px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.08em;
-color: #FFFFFF;
-}
+ .header_1 {
+ 	min-width: 1170px;
+ 	min-height: 55px;
+ 	margin-left: 375px;
+ 	margin-right: 375px;
+ 	margin-top: 19px;
+ 	position: fixed;
+ 	z-index: 2;
+ }
 
 
-.about_us {
-   width: 100%;
-   min-height: 500px;
-   display: flex;
-   flex-direction: column;
-   background-color: #ffffff;
-   background-repeat: no-repeat;
-   background-image: url(../img/tetka.png);
-   background-size: 600px 600px;
-   background-position-x: 70%;
-   background-position-y: 40%;
-   
-}
+ .nav_header {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ 	justify-content: space-around;
 
-.about_us_h2 {
-   max-width: 400px;
-   margin-left: 477px;
-   margin-top: 42px;
-   max-height: 405px;
-}
-.about_us_h2>h2 {
-   font-family: Vollkorn;
-font-style: normal;
-font-weight: normal;
-font-size: 58px;
-line-height: 81px;
-display: flex;
-align-items: center;
-color: #4D476F;
-}
-.about_us_h2>p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
-color: #000000;
-}
-.about_us_h2>h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 130%;
-letter-spacing: 0.01em;
-color: #000000;
-}
+ }
 
-.about_us_end_h3 {
-   max-width:370px;
-   max-height: 60px;
-   text-align: right;
-   margin-left: 775px;
-   margin-top: 140px;
-}
-.about_us_end_h3>h3 {
-   font-family: Open Sans;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 16px;
-   line-height: 150%;
-   text-align: right;
-   letter-spacing: 0.01em;
-   color: #1F1F1F;
-}
+ #logo {
+ 	max-width: 122px;
+ 	max-height: 55px;
+ }
 
-.header_price {
-   width: 100%;
-   min-height: 208px;
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
-   background-image: url(../img/about_us_end.png);
-   background-position: bottom;
-}
-.header_price h2 {
-   font-family: Vollkorn;
-font-style: normal;
-font-weight: normal;
-font-size: 58px;
-line-height: 100%;
-color: #4D476F;
-}
+ .contact_list {
+ 	display: flex;
+ 	margin-right: 111px;
+ 	margin-left: 79px;
+ }
 
-.box_main_computer {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   max-height: 1020px;
-   background: url(../img/end_clouds_for_computer5.png);
-   background-position: bottom;
-   background-repeat: no-repeat;  
-}
+ .contact_ul {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	color: #1F2125;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 18px;
 
-.box_computer1 {
-   min-width: 670px;
-   min-height: 185px;
-   margin-top: 17px;
-   margin-left: 375px;
-   display: flex;
-   justify-content: start;
-   background: url(../img/cup.png),url(../img/circle.png),url(../img/clouds_img.png),url(../img/clouds_img@2x.png);
-   background-repeat: no-repeat;
-   background-size: 170px 167px,137px 135px,265px 155px,265px 155px;
-   background-position: 95px -5px,103px 0px,left bottom,left bottom;
-}
-.computer1_text {
-   max-width: 372px;
-   max-height: 77px;
-   margin-left: 300px;
-   margin-top: 10px;
-}
-.computer1_text h3 {
-font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 140%;
-letter-spacing: 0.01em;
-}
-.computer1_text p {
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
-}
+ }
 
-.box_computer2 {
-   min-width: 670px;
-   min-height: 185px;
-   display: flex;
-   justify-content: end;
-   margin-right: 375px;
-   background: url(../img/10.png),url(../img/circle.png),url(../img/clouds10.png);
-   background-size: 170px 167px,137px 135px,235px 161px;
-   background-position:top right 84px,top 8px right 100px,bottom right;
-   background-repeat: no-repeat;
-}
-.computer2_text {
-   max-width: 372px;
-   max-height: 77px;
-   text-align: right;
-   margin-right: 300px;
-   margin-top: 10px;
-   
-}
-.computer2_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 140%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.computer2_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
-color: #000000;
-}
+ .contact_item {
+ 	margin-right: 25px;
+ 	list-style-type: none;
+ 	color: #1F2125;
+ }
 
-.box_computer3 {
-   min-width: 670px;
-   min-height: 185px;
-   display: flex;
-   justify-content: start;
-   background: url(../img/instruments.png),url(../img/circle.png),url(../img/clouds_for_instruments.png);
-   background-size: 170px 167px,138px 135px,295px 185px;
-   background-position: top left 100px,top left 101px,left;
-   background-repeat: no-repeat;
-   margin-left: 375px;
-}
-.computer3_text {
-   max-width: 372px;
-   max-height: 77px;
-   text-align: left;
-   margin-left: 300px;
-   margin-top: 28px;
-}
-.computer3_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 140%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.computer3_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
-color: #000000;
-}
+ .contact_item_link {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 18px;
+ 	line-height: 25px;
+ 	letter-spacing: 0.01em;
+ 	text-decoration: none;
+ }
 
-.box_computer4 {
-   min-width: 670px;
-   min-height: 185px;
-   display: flex;
-   justify-content:flex-end;
-   margin-right: 375px;
-   background: url(../img/coffee.png),url(../img/circle.png),url(../img/clouds_for_coffe.png),url(../img/clouds2x_for_coffe.png);
-   background-repeat: no-repeat;
-   background-size: 170px 167px,138px 135px,265px 183px,265px 183px;
-   background-position:bottom  right 84px,bottom  right 100px,right,right ;
-}
-.computer4_text {
-   max-width: 372px;
-   max-height: 77px;
-   text-align: right;
-   margin-right: 300px;
-   margin-top: 40px;
-}
-.computer4_text h3 {
-font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 140%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.computer4_text p {
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
-text-align: right;
-color: #000000;
-}
+ .box_tel {
+ 	display: flex;
+ 	flex-direction: row;
+ }
 
-.box_computer5 {
-   min-width: 670px;
-   min-height: 185px;
-   margin-left: 375px;
-   display: flex;
-   justify-content: flex-start;
-   background: url(../img/cirtificate.png),url(../img/circle.png),url(../img/clouds_for_cirtificate.png);
-   background-repeat: no-repeat;
-   background-position: left 100px top ,left 90px top,left;
-}
-.computer5_text {
-   min-width: 372px;
-   min-height: 103px;
-   text-align: left;
-   margin-left: 300px;
-   margin-top: 10px;
-}
-.computer5_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 140%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.computer5_text p {
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
-color: #000000;
-}
+ .tel_button {
+ 	border: none;
+ 	border-radius: 50%;
+ 	background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+ 	text-align: center;
+ 	text-decoration: none;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	margin-right: 10px;
+ }
 
-.computer_footer {
-   width: 100%;
-   min-height: 160px;
-   text-align: center;
-}
-.computer_footer h2 {
-   font-family: Vollkorn;
-font-style: normal;
-font-weight: normal;
-font-size: 58px;
-line-height: 100%;
-color: #4D476F;
-margin-top: 100px;
-}
+ .tel_img {
+ 	width: 18px;
+ 	height: 18px;
+ 	margin-top: 4px;
 
-.box_for_prices {
-   width: 100%;
-   display: flex;
-   background-color: #FFFFFF;
-   background-image: url(../img/nailfile.png), url(../img/scissors.png);
-   background-position: left 138px top 260px,right 140px top 692px;
-   background-size: 153px 162px,168px 170px;
-   background-repeat: no-repeat;
-}
+ }
+
+ .tel_number>a {
+ 	text-decoration: none;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 21px;
+ 	line-height: 29px;
+ }
+
+ a {
+ 	color: #1F2125;
+ 	font-size: 18px;
+ }
+
+ .heading {
+ 	padding-top: 177px;
+ 	text-align: center;
+ }
+
+ .heading>h1 {
+ 	font-family: Vollkorn;
+ 	font-style: normal;
+ 	font-weight: 600;
+ 	font-size: 74px;
+ 	line-height: 103px;
+ 	text-align: center;
+ 	letter-spacing: 0.03em;
+ 	color: #4D476F;
+ }
+
+ .heading>h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 21px;
+ 	line-height: 29px;
+ 	text-align: center;
+ 	letter-spacing: 0.01em;
+ 	color: #4D476F;
+ }
+
+ .button_online {
+ 	margin: 40px;
+ 	width: 370px;
+ 	height: 60px;
+ 	background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
+ 	border: 2px solid #7263E6;
+ 	box-sizing: border-box;
+ 	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
+ 	border-radius: 40px;
+
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 21px;
+ 	line-height: 29px;
+ 	letter-spacing: 0.08em;
+ 	color: #FFFFFF;
+ 	cursor: pointer;
+ }
+
+ .button_online--push {
+ 	background: red !important;
+	 border: 2px solid red !important;
+ }
+
+ button:hover,
+ button:focus {
+ 	background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
+ 	border: 2px solid #7263E6;
+ 	box-sizing: border-box;
+ 	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
+ 	border-radius: 40px;
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 21px;
+ 	line-height: 29px;
+ 	text-align: center;
+ 	letter-spacing: 0.08em;
+ 	color: #FFFFFF;
+ }
 
 
-.services_1 {
-   width: 50%;
-   margin-left: 375px;
-}
-.usual_manicure {
-   min-width: 470px;
-   min-height: 265px;
-   margin-top: 124px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.usual_manicure_item {
-   display: flex;
-   justify-content: flex-end;
-   width: 470px;
-   height: 180px;
-   box-shadow: 0px 0px 10px #D4E2F4;
-   border-radius: 10px;
-   background: url(../img/nails_1.png),url(../img/usual_background.png),linear-gradient(101.8deg, #EFEDFD 19.11%, #E3DFFF 105.55%);
-   background-repeat: no-repeat;
-   background-position: left 13px top 18px,center;
-   background-size: 143px 143px,auto;
-}
-.usual_manicure_text {
-   max-width: 270px;
-   max-height: 80px;
-   text-align: center;
-   margin-top: 47px;
-   padding-right: 40px;
-}
-.usual_manicure_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #000000;
-}
-.usual_manicure_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 150%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.usual_manicure_buttom {
-   margin-top: 25px;
-   width: 270px;
-   height: 60px;
-}
+ .about_us {
+ 	width: 100%;
+ 	min-height: 500px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	background-color: #ffffff;
+ 	background-repeat: no-repeat;
+ 	background-image: url(../img/tetka.png);
+ 	background-size: 600px 600px;
+ 	background-position-x: 70%;
+ 	background-position-y: 40%;
+
+ }
+
+ .about_us_h2 {
+ 	max-width: 400px;
+ 	margin-left: 477px;
+ 	margin-top: 42px;
+ 	max-height: 405px;
+ }
+
+ .about_us_h2>h2 {
+ 	font-family: Vollkorn;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 58px;
+ 	line-height: 81px;
+ 	display: flex;
+ 	align-items: center;
+ 	color: #4D476F;
+ }
+
+ .about_us_h2>p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 160%;
+ 	color: #000000;
+ }
+
+ .about_us_h2>h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 26px;
+ 	line-height: 130%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .about_us_end_h3 {
+ 	max-width: 370px;
+ 	max-height: 60px;
+ 	text-align: right;
+ 	margin-left: 775px;
+ 	margin-top: 140px;
+ }
+
+ .about_us_end_h3>h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 150%;
+ 	text-align: right;
+ 	letter-spacing: 0.01em;
+ 	color: #1F1F1F;
+ }
+
+ .header_price {
+ 	width: 100%;
+ 	min-height: 208px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: flex-end;
+ 	background-image: url(../img/about_us_end.png);
+ 	background-position: bottom;
+ }
+
+ .header_price h2 {
+ 	font-family: Vollkorn;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 58px;
+ 	line-height: 100%;
+ 	color: #4D476F;
+ }
+
+ .box_main_computer {
+ 	display: flex;
+ 	flex-direction: column;
+ 	width: 100%;
+ 	max-height: 1020px;
+ 	background: url(../img/end_clouds_for_computer5.png);
+ 	background-position: bottom;
+ 	background-repeat: no-repeat;
+ }
+
+ .box_computer1 {
+ 	min-width: 670px;
+ 	min-height: 185px;
+ 	margin-top: 17px;
+ 	margin-left: 375px;
+ 	display: flex;
+ 	justify-content: start;
+ 	background: url(../img/cup.png), url(../img/circle.png), url(../img/clouds_img.png), url(../img/clouds_img@2x.png);
+ 	background-repeat: no-repeat;
+ 	background-size: 170px 167px, 137px 135px, 265px 155px, 265px 155px;
+ 	background-position: 95px -5px, 103px 0px, left bottom, left bottom;
+ }
+
+ .computer1_text {
+ 	max-width: 372px;
+ 	max-height: 77px;
+ 	margin-left: 300px;
+ 	margin-top: 10px;
+ }
+
+ .computer1_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 26px;
+ 	line-height: 140%;
+ 	letter-spacing: 0.01em;
+ }
+
+ .computer1_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 160%;
+ }
+
+ .box_computer2 {
+ 	min-width: 670px;
+ 	min-height: 185px;
+ 	display: flex;
+ 	justify-content: end;
+ 	margin-right: 375px;
+ 	background: url(../img/10.png), url(../img/circle.png), url(../img/clouds10.png);
+ 	background-size: 170px 167px, 137px 135px, 235px 161px;
+ 	background-position: top right 84px, top 8px right 100px, bottom right;
+ 	background-repeat: no-repeat;
+ }
+
+ .computer2_text {
+ 	max-width: 372px;
+ 	max-height: 77px;
+ 	text-align: right;
+ 	margin-right: 300px;
+ 	margin-top: 10px;
+
+ }
+
+ .computer2_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 26px;
+ 	line-height: 140%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .computer2_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 160%;
+ 	color: #000000;
+ }
+
+ .box_computer3 {
+ 	min-width: 670px;
+ 	min-height: 185px;
+ 	display: flex;
+ 	justify-content: start;
+ 	background: url(../img/instruments.png), url(../img/circle.png), url(../img/clouds_for_instruments.png);
+ 	background-size: 170px 167px, 138px 135px, 295px 185px;
+ 	background-position: top left 100px, top left 101px, left;
+ 	background-repeat: no-repeat;
+ 	margin-left: 375px;
+ }
+
+ .computer3_text {
+ 	max-width: 372px;
+ 	max-height: 77px;
+ 	text-align: left;
+ 	margin-left: 300px;
+ 	margin-top: 28px;
+ }
+
+ .computer3_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 26px;
+ 	line-height: 140%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .computer3_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 160%;
+ 	color: #000000;
+ }
+
+ .box_computer4 {
+ 	min-width: 670px;
+ 	min-height: 185px;
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	margin-right: 375px;
+ 	background: url(../img/coffee.png), url(../img/circle.png), url(../img/clouds_for_coffe.png), url(../img/clouds2x_for_coffe.png);
+ 	background-repeat: no-repeat;
+ 	background-size: 170px 167px, 138px 135px, 265px 183px, 265px 183px;
+ 	background-position: bottom right 84px, bottom right 100px, right, right;
+ }
+
+ .computer4_text {
+ 	max-width: 372px;
+ 	max-height: 77px;
+ 	text-align: right;
+ 	margin-right: 300px;
+ 	margin-top: 40px;
+ }
+
+ .computer4_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 26px;
+ 	line-height: 140%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .computer4_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 160%;
+ 	text-align: right;
+ 	color: #000000;
+ }
+
+ .box_computer5 {
+ 	min-width: 670px;
+ 	min-height: 185px;
+ 	margin-left: 375px;
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	background: url(../img/cirtificate.png), url(../img/circle.png), url(../img/clouds_for_cirtificate.png);
+ 	background-repeat: no-repeat;
+ 	background-position: left 100px top, left 90px top, left;
+ }
+
+ .computer5_text {
+ 	min-width: 372px;
+ 	min-height: 103px;
+ 	text-align: left;
+ 	margin-left: 300px;
+ 	margin-top: 10px;
+ }
+
+ .computer5_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 26px;
+ 	line-height: 140%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .computer5_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 16px;
+ 	line-height: 160%;
+ 	color: #000000;
+ }
+
+ .computer_footer {
+ 	width: 100%;
+ 	min-height: 160px;
+ 	text-align: center;
+ }
+
+ .computer_footer h2 {
+ 	font-family: Vollkorn;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 58px;
+ 	line-height: 100%;
+ 	color: #4D476F;
+ 	margin-top: 100px;
+ }
+
+ .box_for_prices {
+ 	width: 100%;
+ 	display: flex;
+ 	background-color: #FFFFFF;
+ 	background-image: url(../img/nailfile.png), url(../img/scissors.png);
+ 	background-position: left 138px top 260px, right 140px top 692px;
+ 	background-size: 153px 162px, 168px 170px;
+ 	background-repeat: no-repeat;
+ }
 
 
-.shellac_manicure {
-   min-width: 470px;
-   min-height: 265px;
-   margin-top: 45px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.shellac_manicure_item {
-   display: flex;
-   justify-content: flex-end;
-   width: 470px;
-   height: 180px;
-   box-shadow: 0px 0px 10px #D4E2F4;
-   border-radius: 10px;
-   background-image: url(../img/nails_3.png),url(../img/usual_background.png),linear-gradient(101.51deg, #EFEDFD 9.26%, #E3DFFF 96.67%);
-   background-repeat: no-repeat;
-   background-position: left 13px top 18px,center;
-   background-size: 143px 143px,auto;
-}
-.shellac_manicure_text {
-   max-width: 270px;
-   max-height: 80px;
-   margin-top: 47px;
-   text-align: center;
-   padding-right: 40px;
-}
-.shellac_manicure_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #000000;
-}
-.shellac_manicure_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 150%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.shellac_manicure_buttom {
-   width: 270px;
-   height: 60px;
-   margin-top: 25px;
-}
+ .services_1 {
+ 	width: 50%;
+ 	margin-left: 375px;
+ }
+
+ .usual_manicure {
+ 	min-width: 470px;
+ 	min-height: 265px;
+ 	margin-top: 124px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+
+ .usual_manicure_item {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	width: 470px;
+ 	height: 180px;
+ 	box-shadow: 0px 0px 10px #D4E2F4;
+ 	border-radius: 10px;
+ 	background: url(../img/nails_1.png), url(../img/usual_background.png), linear-gradient(101.8deg, #EFEDFD 19.11%, #E3DFFF 105.55%);
+ 	background-repeat: no-repeat;
+ 	background-position: left 13px top 18px, center;
+ 	background-size: 143px 143px, auto;
+ }
+
+ .usual_manicure_text {
+ 	max-width: 270px;
+ 	max-height: 80px;
+ 	text-align: center;
+ 	margin-top: 47px;
+ 	padding-right: 40px;
+ }
+
+ .usual_manicure_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.02em;
+ 	color: #000000;
+ }
+
+ .usual_manicure_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 26px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .usual_manicure_buttom {
+ 	margin-top: 25px;
+ 	width: 270px;
+ 	height: 60px;
+ }
 
 
-.uf_manicure {
-   min-width: 470px;
-   min-height: 265px;
-   margin-top: 45px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.uf_manicure_item {
-   display: flex;
-   justify-content: flex-end;
-   width: 470px;
-   height: 180px;
-   box-shadow: 0px 0px 10px #D4E2F4;
-   border-radius: 10px;
-   background-image:url(../img/nails_5.png),url(../img/usual_background.png),linear-gradient(104.26deg, #EFEDFD 13.76%, #E3DFFF 100.64%);
-   background-repeat: no-repeat;
-   background-position: left 13px top 18px,center;
-   background-size: 143px 143px,auto;
-}
-.uf_manicure_text {
-   max-width: 270px;
-   max-height: 80px;
-   margin-top: 47px;
-   text-align: center;
-   padding-right: 40px;
-}
-.uf_manicure_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #000000;
-}
-.uf_manicure_text p {
-   font-family: Open Sans;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 26px;
-   line-height: 150%;
-   letter-spacing: 0.01em;
-   color: #000000;
-}
-.uf_manicure_buttom {
-   width: 270px;
-   height: 60px;
-   margin-top: 25px;
-}
+ .shellac_manicure {
+ 	min-width: 470px;
+ 	min-height: 265px;
+ 	margin-top: 45px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+
+ .shellac_manicure_item {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	width: 470px;
+ 	height: 180px;
+ 	box-shadow: 0px 0px 10px #D4E2F4;
+ 	border-radius: 10px;
+ 	background-image: url(../img/nails_3.png), url(../img/usual_background.png), linear-gradient(101.51deg, #EFEDFD 9.26%, #E3DFFF 96.67%);
+ 	background-repeat: no-repeat;
+ 	background-position: left 13px top 18px, center;
+ 	background-size: 143px 143px, auto;
+ }
+
+ .shellac_manicure_text {
+ 	max-width: 270px;
+ 	max-height: 80px;
+ 	margin-top: 47px;
+ 	text-align: center;
+ 	padding-right: 40px;
+ }
+
+ .shellac_manicure_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.02em;
+ 	color: #000000;
+ }
+
+ .shellac_manicure_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 26px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .shellac_manicure_buttom {
+ 	width: 270px;
+ 	height: 60px;
+ 	margin-top: 25px;
+ }
 
 
-.services_2 {
-   width: 50%;
-   margin-right: 372px;
-   margin-left: 230px;
-}
-.usual_pedicure {
-   min-width: 470px;
-   min-height: 265px;
-   margin-top: 208px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.usual_pedicure_item {
-   display: flex;
-   justify-content: flex-start;
-   width: 470px;
-   height: 180px;
-   box-shadow: 0px 0px 10px #D4E2F4;
-   border-radius: 10px;
-   background-image:url(../img/nails_2.png),url(../img/usual_background_pedicure.png),linear-gradient(108.85deg, #EFEDFD 5.15%, #E3DFFF 84.98%);;
-   background-repeat: no-repeat;
-   background-position: right 13px top 18px,center;
-   background-size: 143px 143px,auto;
-}
-.usual_pedicure_text {
-   width: 270px;
-   height: 80px;
-   padding-left: 40px;
-   text-align: center;
-   margin-top: 47px;
-}
-.usual_pedicure_text h3 {
-   font-family: Open Sans;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 24px;
-   line-height: 150%;
-   letter-spacing: 0.02em;
-   color: #000000;
-}
-.usual_pedicure_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 150%;
-letter-spacing: 0.01em;
-color: #000000;
-}
+ .uf_manicure {
+ 	min-width: 470px;
+ 	min-height: 265px;
+ 	margin-top: 45px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
 
-.usual_pedicure_buttom {
-   width: 270px;
-   height: 60px;
-   margin-top: 25px;
-}
+ .uf_manicure_item {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	width: 470px;
+ 	height: 180px;
+ 	box-shadow: 0px 0px 10px #D4E2F4;
+ 	border-radius: 10px;
+ 	background-image: url(../img/nails_5.png), url(../img/usual_background.png), linear-gradient(104.26deg, #EFEDFD 13.76%, #E3DFFF 100.64%);
+ 	background-repeat: no-repeat;
+ 	background-position: left 13px top 18px, center;
+ 	background-size: 143px 143px, auto;
+ }
 
+ .uf_manicure_text {
+ 	max-width: 270px;
+ 	max-height: 80px;
+ 	margin-top: 47px;
+ 	text-align: center;
+ 	padding-right: 40px;
+ }
 
-.shellac_pedicure {
-   min-width: 470px;
-   min-height: 265px;
-   margin-top: 45px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.shellac_pedicure_item {
-   display: flex;
-   justify-content: flex-start;
-   width: 470px;
-   height: 180px;
-   box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.25);
-   border-radius: 10px;
-   background-image:url(../img/nails_4.png), url(../img/usual_background_pedicure.png),linear-gradient(105.49deg, #EFEDFD 14.74%, #E3DFFF 105.75%);
-   background-repeat: no-repeat;
-   background-position: right 13px top 18px,center;
-   background-size:143px 143px,auto;
-}
-.shellac_pedicure_text {
-   width: 270px;
-   height: 80px;
-   text-align: center;
-   padding-right: 40px;
-   margin-top: 47px;
-}
-.shellac_pedicure_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #000000;
-}
-.shellac_pedicure_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 150%;;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.shellac_pedicure_buttom {
-   width: 270px;
-   height: 60px;
-   margin-top: 25px;
-}
+ .uf_manicure_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.02em;
+ 	color: #000000;
+ }
+
+ .uf_manicure_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 26px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .uf_manicure_buttom {
+ 	width: 270px;
+ 	height: 60px;
+ 	margin-top: 25px;
+ }
 
 
+ .services_2 {
+ 	width: 50%;
+ 	margin-right: 372px;
+ 	margin-left: 230px;
+ }
+
+ .usual_pedicure {
+ 	min-width: 470px;
+ 	min-height: 265px;
+ 	margin-top: 208px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+
+ .usual_pedicure_item {
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	width: 470px;
+ 	height: 180px;
+ 	box-shadow: 0px 0px 10px #D4E2F4;
+ 	border-radius: 10px;
+ 	background-image: url(../img/nails_2.png), url(../img/usual_background_pedicure.png), linear-gradient(108.85deg, #EFEDFD 5.15%, #E3DFFF 84.98%);
+ 	;
+ 	background-repeat: no-repeat;
+ 	background-position: right 13px top 18px, center;
+ 	background-size: 143px 143px, auto;
+ }
+
+ .usual_pedicure_text {
+ 	width: 270px;
+ 	height: 80px;
+ 	padding-left: 40px;
+ 	text-align: center;
+ 	margin-top: 47px;
+ }
+
+ .usual_pedicure_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.02em;
+ 	color: #000000;
+ }
+
+ .usual_pedicure_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 26px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .usual_pedicure_buttom {
+ 	width: 270px;
+ 	height: 60px;
+ 	margin-top: 25px;
+ }
+
+
+ .shellac_pedicure {
+ 	min-width: 470px;
+ 	min-height: 265px;
+ 	margin-top: 45px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+
+ .shellac_pedicure_item {
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	width: 470px;
+ 	height: 180px;
+ 	box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.25);
+ 	border-radius: 10px;
+ 	background-image: url(../img/nails_4.png), url(../img/usual_background_pedicure.png), linear-gradient(105.49deg, #EFEDFD 14.74%, #E3DFFF 105.75%);
+ 	background-repeat: no-repeat;
+ 	background-position: right 13px top 18px, center;
+ 	background-size: 143px 143px, auto;
+ }
+
+ .shellac_pedicure_text {
+ 	width: 270px;
+ 	height: 80px;
+ 	text-align: center;
+ 	padding-right: 40px;
+ 	margin-top: 47px;
+ }
+
+ .shellac_pedicure_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.02em;
+ 	color: #000000;
+ }
+
+ .shellac_pedicure_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 26px;
+ 	line-height: 150%;
+ 	;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .shellac_pedicure_buttom {
+ 	width: 270px;
+ 	height: 60px;
+ 	margin-top: 25px;
+ }
 
 
 
-.uf_pedicure {
-   min-width: 470px;
-   min-height: 265px;
-   margin-top: 45px;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-}
-.uf_pedicure_item {
-   display: flex;
-   align-items: center;
-   width: 470px;
-   height: 180px;
-   box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.25);
-   border-radius: 10px;
-   background-image: url(../img/nails_6.png),url(../img/usual_background_pedicure.png),linear-gradient(103.89deg, #EFEDFD 2.52%, #E3DFFF 105.25%);
-   background-repeat: no-repeat;
-   background-position: right 13px top 18px,center;
-   background-size: 143px 143px,auto;
 
-}
-.uf_pedicure_text {
-   width: 270px;
-   height: 80px;
-   padding-left: 40px;
-   margin-top: 47px;
-}
-.uf_pedicure_text h3 {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #000000;
-}
-.uf_pedicure_text p {
-   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 150%;
-letter-spacing: 0.01em;
-color: #000000;
-}
-.uf_pedicure_buttom {
-   width: 270px;
-   height: 60px;
-   margin-top: 25px;
-}
-/* КНОПАЧКА "ЗАПИСАТЬСЯ" */
-.button_price {
-font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.06em;
-color: #8273F1;
-width: 270px;
-height: 60px;
-border: 1px dashed #9584FE;
-box-sizing: border-box;
-filter: drop-shadow(0px 0px 4px #6755E3);
-border-radius: 110px;
-}
 
-/* КНОПАЧКА "ЗАПИСАТЬСЯ":конец */
+ .uf_pedicure {
+ 	min-width: 470px;
+ 	min-height: 265px;
+ 	margin-top: 45px;
+ 	display: flex;
+ 	align-items: center;
+ 	flex-direction: column;
+ }
 
-/* коробка для формы .начало*/
-.box_for_subs {
-   width: 100%;
-   max-height:794px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background: url(../img/bath_form.svg),url(../img/darkcloud_form.png),url(../img/clouds_form.png),url(../img/white.png);
-   background-size: 497px 405px,462px 339px,100%,100% 440px;
-   background-position:top 25px right 112px,left 251px top 38px,center,top;
-   background-repeat: no-repeat;
-}
-.heading_subs_1 {
-font-family: Vollkorn;
-font-style: normal;
-font-weight: normal;
-font-size: 58px;
-line-height: 100%;
-text-align: center;
-color: #4D476F;
-margin-top: 116px;
-margin-bottom: 75px;
-}
-.box_for_form {
-   width: 971px;
-   height: 337px;
-   background-color: #FFFFFF;
-   box-shadow: 0px 0px 40px #DDE3E8;
-   border-radius: 10px;
-   filter: drop-shadow(0px 0px 40px #DDE3E8);
-   
-}
-.box_form {
-   width: 951px;
-   height: 317px;
-   border: 1px dashed #9584FE;
-   box-sizing: border-box;
-   border-radius: 10px;
-   margin: 10px;
-}
+ .uf_pedicure_item {
+ 	display: flex;
+ 	align-items: center;
+ 	width: 470px;
+ 	height: 180px;
+ 	box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.25);
+ 	border-radius: 10px;
+ 	background-image: url(../img/nails_6.png), url(../img/usual_background_pedicure.png), linear-gradient(103.89deg, #EFEDFD 2.52%, #E3DFFF 105.25%);
+ 	background-repeat: no-repeat;
+ 	background-position: right 13px top 18px, center;
+ 	background-size: 143px 143px, auto;
 
-.heading_subs_2 {
-font-family: Vollkorn;
-font-style: normal;
-font-weight: normal;
-font-size: 58px;
-line-height: 100%;
-text-align: center;
-color: #4D476F;
-margin-top: 120px;
-margin-bottom: 40px;
-}
-/* коробка для формы .конец */
+ }
 
-/* мастера . начало */
-.box_for_masters {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background: url(../img/polish_bg_for_masters.png),url(../img/brush_bg_for_masters.png);
-   background-position: top 336px right 178px,left 161px top -90px;
-   background-repeat: no-repeat;
-   background-size: 232px 232px,366px 366px;
-}
-.masters1 {
-   max-width: 1230px;
-   max-height: 264px;
-   display: flex;
-   margin-bottom: 30px;
-   margin-top: 26px;
-}
-.master_kate {
-   width: 370px;
-   height: 204px;
-   background:url(../img/Kate.png),url(../img/Ellipse.png),url(../img/Rectangle.png),url(../img/white_bg_kate.png);
-   background-size:86.5px 86.5px,98.5px 98.5px,358px 134px,100%;
-   background-repeat: no-repeat;
-   background-position:left 141px top 11px,left 135px top 6px,left 5px bottom 5px,center;
-   margin-left:30px;
-   filter: drop-shadow(0px 0px 30px #BFCBD2);
-   display: flex;
-   align-items: flex-end;
-}
-.box_for_kate {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 358px;
-   height: 134px;
-   margin: 5px;
-}
-.box_for_name {
-   text-align: center;
-}
+ .uf_pedicure_text {
+ 	width: 270px;
+ 	height: 80px;
+ 	padding-left: 40px;
+ 	margin-top: 47px;
+ }
 
-.master_jana {
-   display: flex;
-   align-items: flex-end;
-   width: 370px;
-   height: 204px;
-   background: url(../img/Jana.png),url(../img/Ellipse.png),url(../img/Rectangle.png),url(../img/white_bg_kate.png);
-   background-size:86.5px 86.5px,98.5px 98.5px,358px 134px,100%;
-   background-repeat: no-repeat;
-   background-position:left 141px top 11px,left 135px top 6px,left 5px bottom 5px,center;
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 0 30px;
-   filter: drop-shadow(0px 0px 30px #BFCBD2);
-}
-.box_for_jana {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 358px;
-   height: 134px;
-   margin: 5px;
-   border: 1px dashed #9584FE;
-   box-sizing: border-box;
-   border-radius: 10px 
-}
-.master_tatiana {
-   display: flex;
-   align-items: flex-end;
-   width: 370px;
-   height: 204px;
-   background: url(../img/Tatiana.png),url(../img/Ellipse.png),url(../img/Rectangle.png),url(../img/white_bg_kate.png);
-   background-size: 100%;
-   background-size:86.5px 86.5px,98.5px 98.5px,358px 134px,100%;
-   background-repeat: no-repeat;
-   background-position:left 141px top 11px,left 135px top 6px,left 5px bottom 5px,center;
-   background-repeat: no-repeat;
-   background-position: center;
-   margin-right:30px;
-   filter: drop-shadow(0px 0px 30px #BFCBD2);
-}
-.box_for_tatiana {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 358px;
-   height: 134px;
-   margin: 5px;
-   border: 1px dashed #9584FE;
-   box-sizing: border-box;
-   border-radius: 10px 
-}
-.masters2 {
-   max-width: 1230px;
-   max-height: 264px;
-   display: flex;
-   margin-top: 30px;
-   margin-bottom: 100px;
-}
-.master_elena1 {
-   display: flex;
-   align-items: flex-end;
-   width: 370px;
-   height: 204px;
-   background: url(../img/Elena1.png),url(../img/Ellipse.png),url(../img/Rectangle.png),url(../img/white_bg_kate.png);
-   background-size:86.5px 86.5px,98.5px 98.5px,358px 134px,100%;
-   background-repeat: no-repeat;
-   background-position:left 141px top 11px,left 135px top 6px,left 5px bottom 5px,center;
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center;
-   margin-left:30px;
-   filter: drop-shadow(0px 0px 30px #BFCBD2);
-}
-.box_for_elena1 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 358px;
-   height: 134px;
-   margin: 5px;
-   border: 1px dashed #9584FE;
-   box-sizing: border-box;
-   border-radius: 10px 
-}
-.master_julia {
-   display: flex;
-   align-items: flex-end;
-   width: 370px;
-   height: 204px;
-   background: url(../img/Julia.png),url(../img/Ellipse.png),url(../img/Rectangle.png),url(../img/white_bg_kate.png);
-   background-size:86.5px 86.5px,98.5px 98.5px,358px 134px,100%;
-   background-repeat: no-repeat;
-   background-position:left 141px top 11px,left 135px top 6px,left 5px bottom 5px,center;
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 0 30px;
-   filter: drop-shadow(0px 0px 30px #BFCBD2);
-}
-.box_for_julia {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 358px;
-   height: 134px;
-   margin: 5px;
-   border: 1px dashed #9584FE;
-   box-sizing: border-box;
-   border-radius: 10px 
-}
-.master_elena2 {
-   display: flex;
-   align-items: flex-end;
-   width: 370px;
-   height: 204px;
-   background: url(../img/Elena2.png),url(../img/Ellipse.png),url(../img/Rectangle.png),url(../img/white_bg_kate.png);
-   background-size:86.5px 86.5px,98.5px 98.5px,358px 134px,100%;
-   background-repeat: no-repeat;
-   background-position:left 141px top 11px,left 135px top 6px,left 5px bottom 5px,center;
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center;
-   margin-right:30px;
-   filter: drop-shadow(0px 0px 30px #BFCBD2);
-}
-.box_for_elena2 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 358px;
-   height: 134px;
-   margin: 5px;
-   border: 1px dashed #9584FE;
-   box-sizing: border-box;
-   border-radius: 10px 
-}
-.name {
-   font-size: 31px;
-   font-family: Open Sans;
-   font-style: italic;
-   font-weight: normal;
-   line-height: 150%;
-   letter-spacing: 0.01em;
-   color: #000000;
-}
-.professional {
-   font-family: Open Sans;
-   font-style: italic;
-   font-weight: normal;
-   font-size: 21px;
-   line-height: 150%;
-   letter-spacing: 0.01em;
-   color: #000000;
-}
-/* мастера . конец */
+ .uf_pedicure_text h3 {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.02em;
+ 	color: #000000;
+ }
+
+ .uf_pedicure_text p {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 26px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .uf_pedicure_buttom {
+ 	width: 270px;
+ 	height: 60px;
+ 	margin-top: 25px;
+ }
+
+ /* КНОПАЧКА "ЗАПИСАТЬСЯ" */
+ .button_price {
+ 	font-family: Open Sans;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 21px;
+ 	line-height: 29px;
+ 	text-align: center;
+ 	letter-spacing: 0.06em;
+ 	color: #8273F1;
+ 	width: 270px;
+ 	height: 60px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	filter: drop-shadow(0px 0px 4px #6755E3);
+ 	border-radius: 110px;
+ }
+
+ /* КНОПАЧКА "ЗАПИСАТЬСЯ":конец */
+
+ /* коробка для формы .начало*/
+ .box_for_subs {
+ 	width: 100%;
+ 	max-height: 794px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	background: url(../img/bath_form.svg), url(../img/darkcloud_form.png), url(../img/clouds_form.png), url(../img/white.png);
+ 	background-size: 497px 405px, 462px 339px, 100%, 100% 440px;
+ 	background-position: top 25px right 112px, left 251px top 38px, center, top;
+ 	background-repeat: no-repeat;
+ }
+
+ .heading_subs_1 {
+ 	font-family: Vollkorn;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 58px;
+ 	line-height: 100%;
+ 	text-align: center;
+ 	color: #4D476F;
+ 	margin-top: 116px;
+ 	margin-bottom: 75px;
+ }
+
+ .box_for_form {
+ 	width: 971px;
+ 	height: 337px;
+ 	background-color: #FFFFFF;
+ 	box-shadow: 0px 0px 40px #DDE3E8;
+ 	border-radius: 10px;
+ 	filter: drop-shadow(0px 0px 40px #DDE3E8);
+
+ }
+
+ .box_form {
+ 	width: 951px;
+ 	height: 317px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	border-radius: 10px;
+ 	margin: 10px;
+ }
+
+ .heading_subs_2 {
+ 	font-family: Vollkorn;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 58px;
+ 	line-height: 100%;
+ 	text-align: center;
+ 	color: #4D476F;
+ 	margin-top: 120px;
+ 	margin-bottom: 40px;
+ }
+
+ /* коробка для формы .конец */
+
+ /* мастера . начало */
+ .box_for_masters {
+ 	width: 100%;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	background: url(../img/polish_bg_for_masters.png), url(../img/brush_bg_for_masters.png);
+ 	background-position: top 336px right 178px, left 161px top -90px;
+ 	background-repeat: no-repeat;
+ 	background-size: 232px 232px, 366px 366px;
+ }
+
+ .masters1 {
+ 	max-width: 1230px;
+ 	max-height: 264px;
+ 	display: flex;
+ 	margin-bottom: 30px;
+ 	margin-top: 26px;
+ }
+
+ .master_kate {
+ 	width: 370px;
+ 	height: 204px;
+ 	background: url(../img/Kate.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 5px, center;
+ 	margin-left: 30px;
+ 	filter: drop-shadow(0px 0px 30px #BFCBD2);
+ 	display: flex;
+ 	align-items: flex-end;
+ }
+
+ .box_for_kate {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 358px;
+ 	height: 134px;
+ 	margin: 5px;
+ }
+
+ .box_for_name {
+ 	text-align: center;
+ }
+
+ .master_jana {
+ 	display: flex;
+ 	align-items: flex-end;
+ 	width: 370px;
+ 	height: 204px;
+ 	background: url(../img/Jana.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 5px, center;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	margin: 0 30px;
+ 	filter: drop-shadow(0px 0px 30px #BFCBD2);
+ }
+
+ .box_for_jana {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 358px;
+ 	height: 134px;
+ 	margin: 5px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	border-radius: 10px
+ }
+
+ .master_tatiana {
+ 	display: flex;
+ 	align-items: flex-end;
+ 	width: 370px;
+ 	height: 204px;
+ 	background: url(../img/Tatiana.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background-size: 100%;
+ 	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 5px, center;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	margin-right: 30px;
+ 	filter: drop-shadow(0px 0px 30px #BFCBD2);
+ }
+
+ .box_for_tatiana {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 358px;
+ 	height: 134px;
+ 	margin: 5px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	border-radius: 10px
+ }
+
+ .masters2 {
+ 	max-width: 1230px;
+ 	max-height: 264px;
+ 	display: flex;
+ 	margin-top: 30px;
+ 	margin-bottom: 100px;
+ }
+
+ .master_elena1 {
+ 	display: flex;
+ 	align-items: flex-end;
+ 	width: 370px;
+ 	height: 204px;
+ 	background: url(../img/Elena1.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 5px, center;
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	margin-left: 30px;
+ 	filter: drop-shadow(0px 0px 30px #BFCBD2);
+ }
+
+ .box_for_elena1 {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 358px;
+ 	height: 134px;
+ 	margin: 5px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	border-radius: 10px
+ }
+
+ .master_julia {
+ 	display: flex;
+ 	align-items: flex-end;
+ 	width: 370px;
+ 	height: 204px;
+ 	background: url(../img/Julia.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 5px, center;
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	margin: 0 30px;
+ 	filter: drop-shadow(0px 0px 30px #BFCBD2);
+ }
+
+ .box_for_julia {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 358px;
+ 	height: 134px;
+ 	margin: 5px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	border-radius: 10px
+ }
+
+ .master_elena2 {
+ 	display: flex;
+ 	align-items: flex-end;
+ 	width: 370px;
+ 	height: 204px;
+ 	background: url(../img/Elena2.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 5px, center;
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	margin-right: 30px;
+ 	filter: drop-shadow(0px 0px 30px #BFCBD2);
+ }
+
+ .box_for_elena2 {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 358px;
+ 	height: 134px;
+ 	margin: 5px;
+ 	border: 1px dashed #9584FE;
+ 	box-sizing: border-box;
+ 	border-radius: 10px
+ }
+
+ .name {
+ 	font-size: 31px;
+ 	font-family: Open Sans;
+ 	font-style: italic;
+ 	font-weight: normal;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ .professional {
+ 	font-family: Open Sans;
+ 	font-style: italic;
+ 	font-weight: normal;
+ 	font-size: 21px;
+ 	line-height: 150%;
+ 	letter-spacing: 0.01em;
+ 	color: #000000;
+ }
+
+ /* мастера . конец */
