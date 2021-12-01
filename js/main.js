@@ -38,3 +38,10 @@ function buttonHoldChangeStyle(el, btn_style_class) {
 
 document.querySelectorAll('.button_online').forEach(el_mass => {buttonHoldChangeStyle(el_mass, 'button_online--push')} );
 document.querySelectorAll('.button_shell').forEach(el_mass => {buttonHoldChangeStyle(el_mass, 'button_shell--push')} );
+
+document.querySelectorAll('.button_left_examples').forEach( function (element) {
+	element.addEventListener("dblclick", function (event) {
+	event.preventDefault();
+			console.log('hh');
+});
+});
