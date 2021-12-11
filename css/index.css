@@ -1660,6 +1660,7 @@ textarea:hover {
   text-indent: 30px;
 	color: #111111;
 }
+ /* Форма футера . конец */
 .box_for_footer {
 	width: 100%;
 	display: flex;
@@ -1807,4 +1808,3 @@ color: #111111;
 	border: 1px dashed #9584FE;
   filter: drop-shadow(0px 0px 4px #6755E3);
 }
- /* Форма футера . конец */
