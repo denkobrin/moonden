@@ -1250,7 +1250,7 @@ color: #111111;
  }
 
  .name {
- 	font-size: 31px;
+ 	font-size: 21px;
  	font-family: Open Sans;
  	font-style: italic;
  	font-weight: normal;
@@ -1263,7 +1263,7 @@ color: #111111;
  	font-family: Open Sans;
  	font-style: italic;
  	font-weight: normal;
- 	font-size: 21px;
+ 	font-size: 16px;
  	line-height: 150%;
  	letter-spacing: 0.01em;
  	color: #000000;
@@ -1323,11 +1323,12 @@ color: #111111;
 	border: none;
  }
  .button_shell:hover {
-  background: #FFFFFF;
+  background: url(../img/stroke_for_button_exaples_hover.png),#FFFFFF;
+	background-size: 207px 40px,auto;
+	background-position:center;
+	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
-  border: 1px dashed #9584FE;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 0px 4px #6755E3);
+	filter: drop-shadow(0px 0px 4px #6755E3);
   border-radius: 6px;
 	font-family: Open Sans;
   font-style: normal;
@@ -1339,7 +1340,7 @@ color: #111111;
  }
  /* .box_for_examples .box_left_exaples .button_shell:active - чтобы увеличить вес стилей. */
  .button_shell:active {
-	background: url(../img/stroke_for_button_exaples.png),#FFFFFF;
+	background: url(../img/stroke_for_button_exaples_hover.png),#FFFFFF;
 	background-size: 207px 40px,auto;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -1384,7 +1385,7 @@ color: #111111;
 	margin-right: 5px;
 	cursor: pointer;
 	background: url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg),#FFFFFF;
-	background-position: center;
+	background-position:left 27px center,center;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
@@ -1403,7 +1404,7 @@ color: #111111;
 	margin-left: 5px;
 	cursor: pointer;
 	background:url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg), #FFFFFF;
-	background-position: center;
+	background-position:left 27px center,center;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
@@ -1413,35 +1414,35 @@ color: #111111;
 	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left 27px center,center,center;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
 	/* transition: all 1s; */
  }
  .button_left_examples:active {
 	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
-  box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
+    box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position:left 27px center,center,center;
   border-radius: 40px;
  }
  .button_right_examples:hover {
 	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
-  box-shadow: 0px 0px 8px #CEDAEB;
-  border-radius: 40px;
+	background-position:left 27px center,center,center;
+    box-shadow: 0px 0px 8px #CEDAEB;
+    border-radius: 40px;
  }
  .button_right_examples:active {
 	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
-  box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
+    box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position:left 27px center,center,center;
   border-radius: 40px;
  }
  /* Примеры работ . конец */
@@ -1475,14 +1476,14 @@ color: #111111;
  }
  .review {
 	 display: flex;
-	 justify-content: flex-start;
-	 align-items: flex-end;
 	 height: 205px;
-	 background:url(../img/review_photo.png),url(../img/review_bg.png);
-	 background-repeat: no-repeat;
-	 background-size: 152px 155px,769px 265px;
-	 background-position:left 40px top,right top -30px;
 	 margin-top: 58px;
+ }
+ .box_name_and_photo_review {
+	 width:180px;
+	 height: 205px;
+	 margin-right: 33px;
+	 
  }
  .text_name_review {
 	max-width: 180px;
@@ -1492,11 +1493,111 @@ color: #111111;
 	font-weight: normal;
 	font-size: 21px;
 	line-height: 150%;
-	text-align: center;
 	letter-spacing: 0.01em;
 	color: #000000;
-	margin-left: 30px;
  }
+ .photo_review {
+  width: 166px;
+	height: 169px;
+	background: url(../img/review_photo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+ .box_for_text_review {
+	 width: 770px;
+	 height: 205px;
+	 background: #FFFFFF;
+	 margin-left: 33px;
+ }
+ .main_text_review {
+	width: 670px;
+	height: 114px;
+	font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+	text-align: left;
+	margin-left: 25px;
+ }
+.main_text_review p {
+	font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+ .box_for_main_text_review {
+	position: absolute;
+	width: 728px;
+	height: 185px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	border: 1px dashed #9584FE;
+  box-sizing: border-box;
+  border-radius: 1px;
+	margin: 10px;
+ }
+ .box_for_text_triangle {
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	top: 30px; 
+	right: 100px; 
+	border: 25px solid; 
+	border-color: #666 transparent transparent #666; 
+	
+ }
+ .shellbox_for_main_text_review {
+	position: relative;
+	width: 748px;
+	height: 205px;
+	box-shadow: 0px 0px 40px #DDE3E8;
+  border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 29px;
+ }
+ /* Треугольничек */
+ .shellbox_for_main_text_review::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left:-45px;
+	top: 25px;
+  filter: drop-shadow(-10px 0 15px #DDE3E8);
+	border: 25px solid;
+	border-color:transparent #FFFFFF transparent transparent;
+}
+.shellbox_for_main_text_review::after {
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left:-2px;
+	top: 38px;
+	border: 1px dashed #9584FE;
+	transform: rotate(45deg);
+	border-color: transparent transparent #9584FE #9584FE;
+}
+.box_for_main_text_review::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left:-12px;
+	top: 28px;
+	border: 12px solid #ffffff;
+	transform: rotate(45deg);
+}
+/* Треугольничек */
  .box_left_reviews {
 	display: flex;
 	justify-content: flex-end;
@@ -1505,11 +1606,11 @@ color: #111111;
  .button_left_reviews {
   width: 70px;
 	height: 70px;
-	margin-right: 5px;
+	margin-right: 32px;
 	margin-bottom: 177px;
 	cursor: pointer;
 	background: url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg),#FFFFFF;
-	background-position: center;
+	background-position:left 27px center,center;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
@@ -1520,7 +1621,7 @@ color: #111111;
   background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position:left 27px center,center,center;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
  }
@@ -1530,7 +1631,7 @@ color: #111111;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position:left 27px center,center,center;
   border-radius: 40px;
  }
 
@@ -1546,7 +1647,7 @@ color: #111111;
 	margin-bottom: 177px;
 	cursor: pointer;
 	background: url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg),#FFFFFF;
-	background-position: center;
+	background-position:left 27px center,center;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
@@ -1556,7 +1657,7 @@ color: #111111;
 	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position:left 27px center,center,center;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
  }
@@ -1566,7 +1667,7 @@ color: #111111;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position:left 27px center,center,center;
   border-radius: 40px;
  }
  /* Отзывы клиентов . конец */
@@ -1642,12 +1743,12 @@ textarea {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 360%;
+  line-height: 120%;
   letter-spacing: 0.01em;
   text-indent: 30px;
   color: #111111;
 	resize: vertical;
-	padding: 30px 0 0 0;
+	padding: 30px;
 }
 textarea:hover {
 	border: 1px dashed #8E7DF8;
@@ -1655,10 +1756,11 @@ textarea:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 360%;
+  line-height: 120%;
   letter-spacing: 0.01em;
   text-indent: 30px;
 	color: #111111;
+	filter: drop-shadow(0px 0px 4px #6755E3);
 }
  /* Форма футера . конец */
 .box_for_footer {
@@ -1808,3 +1910,5 @@ color: #111111;
 	border: 1px dashed #9584FE;
   filter: drop-shadow(0px 0px 4px #6755E3);
 }
+/* finish */
+
