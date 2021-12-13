@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MOON_DEN</title>
 	<link rel="stylesheet" href="css/index.css">
-  <link rel="icon" href="img/icons/favicon.svg" type="image/svg"> 
+	<link rel="icon" href="img/icons/favicon.svg" type="image/svg">
 	<link href="https://fonts.googleapis.com/css?family=Vollkorn:600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
@@ -20,18 +20,18 @@
 				<div class="header_1">
 					<nav class="nav_header">
 						<div>
-							<a href="/" class="header_logo">
+							<a href="#" class="header_logo">
 								<img src="img/logo.png" id="logo" alt="Салон красоты MOON">
 							</a>
 						</div>
 						<div class="contact_list">
 							<ul class="contact_ul">
-								<li class="contact_item"><a href="/" class="contact_item_link">О нас</a></li>
-								<li class="contact_item"><a href="/" class="contact_item_link">Цены</a></li>
-								<li class="contact_item"><a href="/" class="contact_item_link">Наша команда</a></li>
-								<li class="contact_item"><a href="/" class="contact_item_link">Наши работы</a></li>
-								<li class="contact_item"><a href="/" class="contact_item_link">Отзывы</a></li>
-								<li class="contact_item"><a href="/" class="contact_item_link">Контакты</a></li>
+								<li class="contact_item"><a href="#" class="contact_item_link">О нас</a></li>
+								<li class="contact_item"><a href="#" class="contact_item_link">Цены</a></li>
+								<li class="contact_item"><a href="#" class="contact_item_link">Наша команда</a></li>
+								<li class="contact_item"><a href="#" class="contact_item_link">Наши работы</a></li>
+								<li class="contact_item"><a href="#" class="contact_item_link">Отзывы</a></li>
+								<li class="contact_item"><a href="#" class="contact_item_link">Контакты</a></li>
 							</ul>
 						</div>
 						<div class="box_tel">
@@ -203,18 +203,19 @@
 		<div class="box_for_subs">
 			<h2 class="heading_subs_1">У нас также можно</h2>
 			<div class="box_for_form">
-				<form class="box_form" action="#">
-        <div class="box_abonement">
-					<h3>Заказать абонемент</h3>
-					<p>И мы свяжемся с вами в течение 15-ти минут</p>
-				</div>
-				<div class="box_for_inputs">
-					<input type="text" name="name" maxlength="50" required placeholder="Ирина Фалькова" id="input_name">
-					<input type="text" required name="tel" placeholder="+375(29)123-45-67" id="input_tel">
-				</div>
-				<div class="box_for_button_form">
-					<button class="button_form">ЗАКАЗАТЬ</button>
-				</div>
+				<form class="box_form" method="post" action="php/form.php">
+					<div class="box_abonement">
+						<h3>Заказать абонемент</h3>
+						<p>И мы свяжемся с вами в течение 15-ти минут</p>
+					</div>
+					<div class="box_for_inputs">
+						<input autocomplete="off" type="text" name="name" maxlength="50" required placeholder="Ирина Фалькова"
+							id="input_name">
+						<input autocomplete="off" type="text" required name="tel" placeholder="+375(29)123-45-67" id="input_tel">
+					</div>
+					<div class="box_for_button_form">
+						<button class="button_form">ЗАКАЗАТЬ</button>
+					</div>
 				</form>
 			</div>
 			<h2 class="heading_subs_2">Наши мастера</h2>
@@ -277,19 +278,19 @@
 			<div class="box_left_examples">
 				<div class="button_left_examples"></div>
 			</div>
-			  <div class="box_main_examples">
+			<div class="box_main_examples">
 				<h2 class="header_exaples">Примеры наших работ</h2>
-			  <div class="box_for_buttons">
-				<button type="button" class="button_shell">Маникюр</button>
-				<button type="button" class="button_shell">Педикюр</button>
-				<button type="button" class="button_shell">Покрытие</button>
-			  </div>
-        <div class="box_for_workphoto">
-		    </div>
-			  </div>
+				<div class="box_for_buttons">
+					<button type="button" class="button_shell">Маникюр</button>
+					<button type="button" class="button_shell">Педикюр</button>
+					<button type="button" class="button_shell">Покрытие</button>
+				</div>
+				<div class="box_for_workphoto">
+				</div>
+			</div>
 			<div class="box_right_examples">
 				<div class="button_right_examples"></div>
-			</div>	
+			</div>
 		</div>
 		<div class="box_for_reviews">
 			<div class="box_left_reviews">
@@ -300,19 +301,23 @@
 				<div class="review">
 					<div class="box_name_and_photo_review">
 						<div class="photo_review"></div>
-						<div class="text_name_review"><p>Наталья,37 лет</p></div>
+						<div class="text_name_review">
+							<p>Наталья, 37 лет</p>
+						</div>
 					</div>
-					<div class="box_for_text_review"> 
+					<div class="box_for_text_review">
 						<div class="text_review">
-              <div class="shellbox_for_main_text_review">
-                <div class="box_for_main_text_review">
+							<div class="shellbox_for_main_text_review">
+								<div class="box_for_main_text_review">
 									<div class="main_text_review">
-										<p>Замечательный салон, очень позитивные и доброжелательные мастера там работают,всегда улыбки,запах вкусного кофе и    дружеская атмосфера!
-										Есть в этом заведении прекрасная девушка Юлия,с хорошим вкусоми прекрасным чувством юмора,мастер своего дела!Профессиональный подход и результат выше всяких похвал!!! Спасибо,теперь я ваш клиент!
-											</p>
+										<p>Замечательный салон, очень позитивные и доброжелательные мастера там работают,всегда улыбки,запах
+											вкусного кофе и дружеская атмосфера!
+											Есть в этом заведении прекрасная девушка Юлия,с хорошим вкусоми прекрасным чувством юмора,мастер
+											своего дела!Профессиональный подход и результат выше всяких похвал!!! Спасибо,теперь я ваш клиент!
+										</p>
 									</div>
 								</div>
-						  </div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -323,28 +328,29 @@
 		</div>
 		<div class="box_form_footer">
 			<div class="box_center">
-			<div class="form_footer">
-				<form method="post" class="main_form" action="php/form.php">
-					<div class="box_abonement2">
-						<h3>Напишите нам и мы сделаем Вас незабываемой!</h3>
-					</div>
-					<div class="box_for_inputs">
-						<input type="text" name="name" maxlength="50" required placeholder="Ирина Фалькова" id="input_name2">
-						<input type="text" required name="tel" placeholder="+375(29)123-45-67" id="input_tel2">
-						<input type="text" name="mail" placeholder="E-mail" id="input_mail">
-					</div>
-					<div class="box_for_textarea">
-						<textarea name="comment" placeholder="Оставьте ваш комментарий"></textarea>
-					</div>
-					<div class="box_for_button_form2">
-						<button class="button_form">ОТПРАВИТЬ</button>
-					</div>
-				</form>
-			</div>
+				<div class="form_footer">
+					<form method="post" class="main_form" action="php/form.php">
+						<div class="box_abonement">
+							<h3>Напишите нам и мы сделаем Вас незабываемой!</h3>
+						</div>
+						<div class="box_for_inputs">
+							<input autocomplete="off" type="text" name="name" maxlength="50" required placeholder="Ирина Фалькова"
+								id="input_name2">
+							<input autocomplete="off" type="text" required name="tel" placeholder="+375(29)123-45-67" id="input_tel2">
+							<input autocomplete="off" type="text" name="mail" placeholder="E-mail" id="input_mail">
+						</div>
+						<div class="box_for_textarea">
+							<textarea name="comment" placeholder="Оставьте ваш комментарий" id="form_footer_textarea"></textarea>
+						</div>
+						<div class="box_for_button_form2">
+							<button class="button_form">ОТПРАВИТЬ</button>
+						</div>
+					</form>
+				</div>
 				<div class="box_logo_footer">
-				<a href="/" class="header_logo">
-					<img src="img/logo.png" id="logo" alt="Салон красоты MOON">
-				</a>
+					<a href="#" class="header_logo">
+						<img src="img/logo.png" id="logo" alt="Салон красоты MOON">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -352,33 +358,40 @@
 			<div class="footer">
 				<div class="box_for_adress">
 					<div class="box_adress">
-							<p>Мы находимся по адресу:</p>
-						<div class="box_for_geoicon"><img src="img/gео_icon.svg" id="geo" alt="локация"><p>г. Минск, ул. Запрудная, д.2 </p></div>
-					</div>
-								<div class="contacts">
-									<div class="box_for_tel"><img src="img/phone_icon.svg" alt="телефон" id="phone_footer"><a href="tel:8-800-800-85-85">8-800-800-85-85</a></div>
-									<div class="box_for_mail"><img src="img/mail-icon.svg" alt="электронный адрес" id="mail_footer"><a href="mailto:moon85@gmail.com
-									">moon85@gmail.com</a></div>
-								</div>
-						<div class="socnetwork">
-							<div class="box_text_socnetwork"><p>Мы в соц. сетях:</p></div>
-							<div class="icon_socnetwork">
-								<div><a href="/"><img src="img/insta_icon.svg" alt=""></a></div>
-								<div><a href="/"><img src="img/fb_icon.svg" alt=""></a></div>
-								<div><a href="/"><img src="img/vk_icon.svg" alt=""></a></div>
-								<div><a href="/"><img src="img/twitter.svg" alt=""></a></div>
-							</div>
+						<p>Мы находимся по адресу:</p>
+						<div class="box_for_geoicon"><img src="img/gео_icon.svg" id="geo" alt="локация">
+							<p>г. Минск, ул. Запрудная, д.2 </p>
 						</div>
+					</div>
+					<div class="contacts">
+						<div class="box_for_tel"><img src="img/phone_icon.svg" alt="телефон" id="phone_footer"><a
+								href="tel:8-800-800-85-85">8-800-800-85-85</a></div>
+						<div class="box_for_mail"><img src="img/mail-icon.svg" alt="электронный адрес" id="mail_footer"><a href="mailto:moon85@gmail.com
+									">moon85@gmail.com</a></div>
+					</div>
+					<div class="socnetwork">
+						<div class="box_text_socnetwork">
+							<p>Мы в соц. сетях:</p>
+						</div>
+						<div class="icon_socnetwork">
+							<div><a href="#"><img src="img/insta_icon.svg" alt="#"></a></div>
+							<div><a href="#"><img src="img/fb_icon.svg" alt="#"></a></div>
+							<div><a href="#"><img src="img/vk_icon.svg" alt="#"></a></div>
+							<div><a href="#"><img src="img/twitter.svg" alt="#"></a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="box_for_footermap">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.1230823856913!2d27.442862015415223!3d53.94732158010938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4f2d22b42c1%3A0xffb650c635b6515d!2z0YPQuy4g0JfQsNC_0YDRg9C00L3QsNGPLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1639237977001!5m2!1sru!2sby" width="970" height="276" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<div class="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.1230823856913!2d27.442862015415223!3d53.94732158010938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4f2d22b42c1%3A0xffb650c635b6515d!2z0YPQuy4g0JfQsNC_0YDRg9C00L3QsNGPLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1639237977001!5m2!1sru!2sby"
+					width="970" height="276" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
 	</div>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
-<script src="js/main.js"></script>
