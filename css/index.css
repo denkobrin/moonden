@@ -20,14 +20,15 @@
  .conteiner {
  	background-image: url(../img/backgorund_header_end.png),url(../img/backgorund_header.jpg);
  	background-size: contain,100%;
- 	background-position: bottom,center;
+ 	background-position: bottom -15px left,center;
  	background-repeat: no-repeat;
- 	min-height: 870px;
+ 	max-height: 890px;
  	width: 100%;
  }
  .header {
 	 display: flex;
 	 justify-content: center;
+	 padding-bottom: 477px;
  }
 
  .header_1 {
@@ -107,20 +108,30 @@
  	justify-content: center;
  	margin-right: 10px;
  }
+ .tel_button:hover {
+  background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+  border: 2px solid #6755E3;
+  box-shadow: 0px 0px 8px #CEDAEB;
+ }
+ .tel_button:active {
+  background: linear-gradient(92.21deg, #8070E8 13.23%, #5E4FD5 82.09%);
+  border: 2px solid #6755E3;
+  box-shadow: 0px 0px 2px #687C99;
+ }
 
  .tel_img {
  	width: 18px;
  	height: 18px;
  	margin-top: 4px;
-
  }
 
  .tel_number>a {
+	font-family: 'Open Sans';
  	text-decoration: none;
- 	font-style: normal;
  	font-weight: bold;
  	font-size: 21px;
  	line-height: 29px;
+	letter-spacing: 0.03em;
  }
 
  a {
@@ -129,16 +140,15 @@
  }
 
  .heading {
- 	padding-top: 177px;
+ 	padding-top: 182px;
  	text-align: center;
  }
 
  .heading>h1 {
  	font-family: 'Vollkorn';
- 	font-style: normal;
  	font-weight: 600;
  	font-size: 74px;
- 	line-height: 103px;
+ 	line-height: 80px;
  	text-align: center;
  	letter-spacing: 0.03em;
  	color: #4D476F;
@@ -156,7 +166,7 @@
  }
 
  .button_online {
- 	margin: 40px;
+ 	margin-top: 40px;
  	width: 370px;
  	height: 60px;
  	background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
@@ -165,7 +175,6 @@
   box-shadow: 20px 10px 30px #CEDAEB;
   border-radius: 40px;
  	font-family: 'Open Sans';
- 	font-style: normal;
  	font-weight: bold;
  	font-size: 21px;
  	line-height: 29px;
@@ -194,26 +203,28 @@
 	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
  }
 
-
+.box_for_about_us_h2 {
+	min-width: 970px;
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 40px;
+}
  .about_us {
  	width: 100%;
- 	min-height: 500px;
  	display: flex;
+	align-items: center;
  	flex-direction: column;
  	background-color: #ffffff;
  	background-repeat: no-repeat;
- 	background-image: url(../img/tetka.png);
- 	background-size: 600px 600px;
- 	background-position-x: 70%;
- 	background-position-y: 40%;
-
+ 	background-image:url(../img/tetka.png);
+ 	background-size:626px 601px;
+ 	background-position:top -20px right 415px;
  }
 
  .about_us_h2 {
  	max-width: 400px;
- 	margin-left: 477px;
- 	margin-top: 42px;
- 	max-height: 405px;
+ 	margin-top: 52px;
+	text-align: left;
  }
 
  .about_us_h2>h2 {
@@ -221,22 +232,26 @@
  	font-style: normal;
  	font-weight: normal;
  	font-size: 58px;
- 	line-height: 81px;
+ 	line-height: 120%;
  	display: flex;
  	align-items: center;
  	color: #4D476F;
+	padding: 10px 0;
  }
 
- .about_us_h2>p {
+ .about_us_h2 p {
  	font-family: 'Open Sans';
  	font-style: normal;
  	font-weight: normal;
  	font-size: 16px;
  	line-height: 160%;
  	color: #000000;
+	 padding-top: 3px;
  }
 
  .about_us_h2>h3 {
+	 text-align:left;
+	 max-width: 327px;
  	font-family: 'Open Sans';
  	font-style: normal;
  	font-weight: bold;
@@ -244,74 +259,101 @@
  	line-height: 130%;
  	letter-spacing: 0.01em;
  	color: #000000;
- }
+	padding: 15px 0;
 
- .about_us_end_h3 {
+ }
+.box_for_lebotaeva {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top: 82px;
+}
+ .about_us_end_p {
  	max-width: 370px;
  	max-height: 60px;
  	text-align: right;
- 	margin-left: 775px;
- 	margin-top: 140px;
  }
 
- .about_us_end_h3>h3 {
+ .about_us_end_p p:nth-child(1) {
  	font-family: 'Open Sans';
- 	font-style: italic;
- 	font-weight: normal;
+  font-style: normal;
+  font-weight: normal;
  	font-size: 16px;
- 	line-height: 150%;
+ 	line-height: 120%;
  	text-align: right;
  	letter-spacing: 0.01em;
  	color: #1F1F1F;
  }
-
+ .about_us_end_p p:nth-child(2) {
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 120%;
+	text-align: right;
+	letter-spacing: 0.01em;
+	color: #1F1F1F;
+	margin-top: 10px;
+ }
  .header_price {
  	width: 100%;
  	min-height: 208px;
  	display: flex;
  	justify-content: center;
  	align-items: flex-end;
- 	background-image: url(../img/about_us_end.png);
- 	background-position: bottom;
+	background:  url(../img/about_us_end.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+ 	background-position:left bottom 5px;
  }
 
  .header_price h2 {
  	font-family: 'Vollkorn';
  	font-style: normal;
  	font-weight: normal;
- 	font-size: 58px;
+ 	font-size: 54px;
  	line-height: 100%;
  	color: #4D476F;
+	letter-spacing: 0.01em;
+	padding-bottom: 25px
  }
 
- .box_main_computer {
+ .box_for_main_computer {
  	display: flex;
- 	flex-direction: column;
+	align-items: center;
+	flex-direction: column;
  	width: 100%;
  	background: url(../img/end_clouds_for_computer5.png);
 	background-size: contain;
  	background-position: bottom;
  	background-repeat: no-repeat;
  }
-
+.box_main_computer {
+	width: 1170px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0;
+}
+.main_computer_section_1 {
+	display: flex;
+	flex-direction: column;
+	background: url(../img/professionalism.svg),url(../img/experience.svg);
+	background-repeat: no-repeat;
+	background-size:295px 185px,255px 195px ;
+	background-position: left -10px top -2px,bottom 8px right;
+}
  .box_computer1 {
- 	min-width: 670px;
- 	min-height: 185px;
- 	margin-top: 17px;
- 	margin-left: 375px;
- 	display: flex;
- 	justify-content: start;
- 	background: url(../img/cup.png), url(../img/circle.png), url(../img/clouds_img.png), url(../img/clouds_img@2x.png);
- 	background-repeat: no-repeat;
- 	background-size: 170px 167px, 137px 135px, 265px 155px, 265px 155px;
- 	background-position: 95px -5px, 103px 0px, left bottom, left bottom;
+	 width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
  }
-
  .computer1_text {
  	max-width: 372px;
- 	max-height: 77px;
- 	margin-left: 300px;
- 	margin-top: 10px;
+ 	min-height: 77px;
+ 	text-align: left;
+	 margin-left: 300px;
+	 padding: 10px 0 5px 0;
  }
 
  .computer1_text h3 {
@@ -319,8 +361,9 @@
  	font-style: normal;
  	font-weight: bold;
  	font-size: 26px;
- 	line-height: 140%;
+ 	line-height: 120%;
  	letter-spacing: 0.01em;
+	padding: 10px 0;
  }
 
  .computer1_text p {
@@ -332,24 +375,19 @@
  }
 
  .box_computer2 {
- 	min-width: 670px;
- 	min-height: 185px;
- 	display: flex;
- 	justify-content: end;
- 	margin-right: 375px;
- 	background: url(../img/10.png), url(../img/circle.png), url(../img/clouds10.png);
- 	background-size: 170px 167px, 137px 135px, 235px 161px;
- 	background-position: top right 84px, top 8px right 100px, bottom right;
- 	background-repeat: no-repeat;
+	 width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-bottom: 20px;
  }
 
  .computer2_text {
  	max-width: 372px;
- 	max-height: 77px;
+ 	min-height: 77px;
  	text-align: right;
- 	margin-right: 300px;
- 	margin-top: 10px;
-
+  margin-right: 300px;
+	padding-bottom: 40px;
  }
 
  .computer2_text h3 {
@@ -357,9 +395,10 @@
  	font-style: normal;
  	font-weight: bold;
  	font-size: 26px;
- 	line-height: 140%;
+ 	line-height: 120%;
  	letter-spacing: 0.01em;
  	color: #000000;
+	 padding: 10px 0;
  }
 
  .computer2_text p {
@@ -370,25 +409,29 @@
  	line-height: 160%;
  	color: #000000;
  }
-
+.main_computer_section_2 {
+	display: flex;
+	flex-direction: column;
+	background: url(../img/safety.svg),url(../img/care.svg);
+	background-position: top left,bottom right;
+	background-repeat: no-repeat;
+	background-size: 285px 185px,265px 184px;
+}
  .box_computer3 {
- 	min-width: 670px;
- 	min-height: 185px;
- 	display: flex;
- 	justify-content: start;
- 	background: url(../img/instruments.png), url(../img/circle.png), url(../img/clouds_for_instruments.png);
- 	background-size: 170px 167px, 138px 135px, 295px 185px;
- 	background-position: top left 100px, top left 101px, left;
- 	background-repeat: no-repeat;
- 	margin-left: 375px;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+  justify-content: flex-start;
+ 	
  }
 
  .computer3_text {
  	max-width: 372px;
- 	max-height: 77px;
- 	text-align: left;
- 	margin-left: 300px;
- 	margin-top: 28px;
+ 	min-height: 77px;
+	 text-align: left;
+	 margin-left: 300px;
+	 padding-top: 10px;
+	 padding-bottom: 50px;
  }
 
  .computer3_text h3 {
@@ -396,9 +439,10 @@
  	font-style: normal;
  	font-weight: bold;
  	font-size: 26px;
- 	line-height: 140%;
+ 	line-height: 120%;
  	letter-spacing: 0.01em;
  	color: #000000;
+	 padding: 10px 0;
  }
 
  .computer3_text p {
@@ -406,28 +450,24 @@
  	font-style: normal;
  	font-weight: normal;
  	font-size: 16px;
- 	line-height: 160%;
+ 	line-height: 120%;
  	color: #000000;
  }
 
  .box_computer4 {
- 	min-width: 670px;
- 	min-height: 185px;
- 	display: flex;
- 	justify-content: flex-end;
- 	margin-right: 375px;
- 	background: url(../img/coffee.png), url(../img/circle.png), url(../img/clouds_for_coffe.png), url(../img/clouds2x_for_coffe.png);
- 	background-repeat: no-repeat;
- 	background-size: 170px 167px, 138px 135px, 265px 183px, 265px 183px;
- 	background-position: bottom right 84px, bottom right 100px, right, right;
+	width: 100%;;
+	display: flex;
+	align-items: flex-end;
+  justify-content: flex-end;
  }
 
  .computer4_text {
  	max-width: 372px;
- 	max-height: 77px;
- 	text-align: right;
- 	margin-right: 300px;
- 	margin-top: 40px;
+ 	min-height: 77px;
+	 text-align: right;
+	 margin-right: 300px;
+	 padding-bottom: 10px;
+	 padding-top: 10px;
  }
 
  .computer4_text h3 {
@@ -435,9 +475,10 @@
  	font-style: normal;
  	font-weight: bold;
  	font-size: 26px;
- 	line-height: 140%;
+ 	line-height: 120%;
  	letter-spacing: 0.01em;
  	color: #000000;
+	 padding: 10px 0;
  }
 
  .computer4_text p {
@@ -451,22 +492,23 @@
  }
 
  .box_computer5 {
- 	min-width: 670px;
- 	min-height: 185px;
- 	margin-left: 375px;
- 	display: flex;
- 	justify-content: flex-start;
- 	background: url(../img/cirtificate.png), url(../img/circle.png), url(../img/clouds_for_cirtificate.png);
- 	background-repeat: no-repeat;
- 	background-position: left 100px top, left 90px top, left;
+	width: 100%;
+	background: url(../img/bonus.svg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 316px 183px;
+	display: flex;
+	align-items: flex-start;
+  justify-content: flex-start;
  }
 
  .computer5_text {
  	min-width: 372px;
  	min-height: 103px;
- 	text-align: left;
- 	margin-left: 300px;
- 	margin-top: 10px;
+	 text-align: left;
+	 margin-left: 300px;
+	 padding-top: 10px;
+	padding-bottom: 85px;
  }
 
  .computer5_text h3 {
@@ -474,9 +516,10 @@
  	font-style: normal;
  	font-weight: bold;
  	font-size: 26px;
- 	line-height: 140%;
+ 	line-height: 120%;
  	letter-spacing: 0.01em;
  	color: #000000;
+	padding: 10px 0;
  }
 
  .computer5_text p {
@@ -490,8 +533,8 @@
 
  .computer_footer {
  	width: 100%;
- 	min-height: 160px;
  	text-align: center;
+	 background: #FFFFFF;
  }
 
  .computer_footer h2 {
@@ -499,17 +542,16 @@
  	font-style: normal;
  	font-weight: normal;
  	font-size: 58px;
- 	line-height: 100%;
+ 	line-height: 120%;
  	color: #4D476F;
- 	margin-top: 100px;
  }
 
  .box_for_prices {
- 	width: 100%;
+ 	max-width: 1920px;
  	display: flex;
  	background-color: #FFFFFF;
  	background-image: url(../img/nailfile.png), url(../img/scissors.png);
- 	background-position: left 138px top 260px, right 140px top 692px;
+ 	background-position: left 138px top 180px, right 140px top 610px;
  	background-size: 153px 162px, 168px 170px;
  	background-repeat: no-repeat;
  }
@@ -517,16 +559,19 @@
 
  .services_1 {
  	width: 50%;
- 	margin-left: 375px;
+  display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-top: 35px;
  }
 
  .usual_manicure {
- 	min-width: 470px;
- 	min-height: 265px;
- 	margin-top: 124px;
+ 	max-width: 470px;
+ 	margin-right: 115px;
  	display: flex;
  	flex-direction: column;
  	align-items: center;
+	padding: 20px 0;
  }
 
  .usual_manicure_item {
@@ -546,8 +591,7 @@
  	max-width: 270px;
  	max-height: 80px;
  	text-align: center;
- 	margin-top: 47px;
- 	padding-right: 40px;
+  padding: 47px 40px 140px 0;
  }
 
  .usual_manicure_text h3 {
@@ -571,19 +615,25 @@
  }
 
  .usual_manicure_button {
- 	margin-top: 25px;
- 	width: 270px;
- 	height: 60px;
+	display: flex;
+	 justify-content: center;
+	 align-items: center;
+	width: 270px;
+	height: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px #CEDAEB;
+	border-radius: 110px;
+	margin: 30px 0;
  }
-
 
  .shellac_manicure {
  	min-width: 470px;
  	min-height: 265px;
- 	margin-top: 45px;
+	 margin-right: 115px;
  	display: flex;
  	flex-direction: column;
  	align-items: center;
+	margin-top: 40px;
  }
 
  .shellac_manicure_item {
@@ -628,19 +678,26 @@
  }
 
  .shellac_manicure_button {
- 	width: 270px;
- 	height: 60px;
- 	margin-top: 25px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	width: 270px;
+	height: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px #CEDAEB;
+	border-radius: 110px;
+	margin: 30px 0;
  }
 
 
  .uf_manicure {
  	min-width: 470px;
  	min-height: 265px;
- 	margin-top: 45px;
+ 	margin-right: 115px;
  	display: flex;
  	flex-direction: column;
  	align-items: center;
+	padding: 20px 0;
  }
 
  .uf_manicure_item {
@@ -685,25 +742,34 @@
  }
 
  .uf_manicure_button {
- 	width: 270px;
- 	height: 60px;
- 	margin-top: 25px;
+	display: flex;
+	 justify-content: center;
+	 align-items: center;
+	width: 270px;
+	height: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px #CEDAEB;
+	border-radius: 110px;
+	margin: 30px 0;
  }
 
 
  .services_2 {
  	width: 50%;
- 	margin-right: 372px;
- 	margin-left: 230px;
+  display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 115px;
  }
 
  .usual_pedicure {
  	min-width: 470px;
  	min-height: 265px;
- 	margin-top: 208px;
+	 margin-left: 120px;
  	display: flex;
  	flex-direction: column;
  	align-items: center;
+	 padding: 20px 0;
  }
 
  .usual_pedicure_item {
@@ -749,19 +815,26 @@
  }
 
  .usual_pedicure_button {
- 	width: 270px;
- 	height: 60px;
- 	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ width: 270px;
+ height: 60px;
+ background: #FFFFFF;
+ box-shadow: 0px 0px 8px #CEDAEB;
+ border-radius: 110px;
+ margin: 30px 0;
  }
 
 
  .shellac_pedicure {
  	min-width: 470px;
  	min-height: 265px;
- 	margin-top: 45px;
+	margin-left: 120px;
  	display: flex;
  	flex-direction: column;
  	align-items: center;
+	padding: 20px 0;
  }
 
  .shellac_pedicure_item {
@@ -782,7 +855,6 @@
  	height: 80px;
  	text-align: center;
  	padding-left: 40px;
- 	margin-top: 47px;
  }
 
  .shellac_pedicure_text h3 {
@@ -807,9 +879,15 @@
  }
 
  .shellac_pedicure_button {
- 	width: 270px;
- 	height: 60px;
- 	margin-top: 25px;
+	display: flex;
+	 justify-content: center;
+	 align-items: center;
+	width: 270px;
+	height: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px #CEDAEB;
+	border-radius: 110px;
+	margin: 30px 0;
  }
 
 
@@ -819,10 +897,11 @@
  .uf_pedicure {
  	min-width: 470px;
  	min-height: 265px;
- 	margin-top: 45px;
+	 margin-left: 120px;
  	display: flex;
  	align-items: center;
  	flex-direction: column;
+	 padding: 20px 0;
  }
 
  .uf_pedicure_item {
@@ -867,9 +946,15 @@
  }
 
  .uf_pedicure_button {
- 	width: 270px;
- 	height: 60px;
- 	margin-top: 25px;
+	display: flex;
+	 justify-content: center;
+	 align-items: center;
+	width: 270px;
+	height: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px #CEDAEB;
+	border-radius: 110px;
+	margin: 30px 0;
  }
 
  /* КНОПАЧКА "ЗАПИСАТЬСЯ" */
@@ -882,15 +967,13 @@
  	text-align: center;
  	letter-spacing: 0.06em;
  	color: #8273F1;
- 	width: 270px;
- 	height: 60px;
-	border: none;
-	background: url(../img/stroke_button_price.svg),#FFFFFF;
-	background-position: center;
-	background-size: 98%;
-	background-repeat: no-repeat;
-	box-shadow: 0px 0px 8px #CEDAEB;
-	border-radius: 110px;
+	 background: #FFFFFF;
+	 width: 260px;
+	 height: 50px;
+	 border: 1px dashed #9584FE;
+	 box-sizing: border-box;
+	 /* filter: drop-shadow(0px 0px 4px #6755E3); */
+	 border-radius: 110px;
 	cursor: pointer;
  }
  .button_price:hover {
@@ -923,14 +1006,13 @@
  /* коробка для формы .начало*/
  .box_for_subs {
  	width: 100%;
- 	max-height: 794px;
  	display: flex;
  	flex-direction: column;
  	justify-content: center;
  	align-items: center;
  	background: url(../img/bath_form.svg), url(../img/darkcloud_form.png), url(../img/clouds_form.png), url(../img/white.png);
  	background-size: 497px 405px, 462px 339px, 100%, 100% 440px;
- 	background-position: top 25px right 112px, left 251px top 38px, bottom, top;
+ 	background-position: top -30px right 112px, left 251px top -15px, bottom, top;
  	background-repeat: no-repeat;
  }
 
@@ -942,7 +1024,7 @@
  	line-height: 100%;
  	text-align: center;
  	color: #4D476F;
- 	margin-top: 116px;
+ 	margin-top: 60px;
  	margin-bottom: 75px;
  }
 .box_abonement h3 {
