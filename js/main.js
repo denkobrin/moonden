@@ -29,3 +29,12 @@ document.querySelectorAll('a[href="#"]').forEach(function (element) {
 		event.preventDefault();
 	});
 });
+
+document.querySelectorAll('.button_form').forEach(el_mass => {
+	buttonHoldChangeStyle(el_mass, 'button_form--push')
+});
+
+document.querySelectorAll('.button_form2').forEach(el_mass => {
+	buttonHoldChangeStyle(el_mass, 'button_form2--push')
+});
+

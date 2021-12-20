@@ -1,6 +1,6 @@
 <svg width="21" height="31" viewBox="0 0 21 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_51_221)">
-<path d="M15.291 5.56982L6.29102 15.6948L15.291 25.8198" stroke="#8273F1" stroke-width="2"/>
+<path d="M15.291 5.56982L6.29102 15.6948L15.291 25.8198" stroke="white" stroke-width="2"/>
 </g>
 <defs>
 <filter id="filter0_d_51_221" x="0.953125" y="0.905518" width="19.085" height="29.5786" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -8,7 +8,7 @@
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.517647 0 0 0 0 0.996078 0 0 0 1 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0235294 0 0 0 0 0.0117647 0 0 0 0 0.141176 0 0 0 1 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_51_221"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_51_221" result="shape"/>
 </filter>

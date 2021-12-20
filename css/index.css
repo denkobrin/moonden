@@ -881,32 +881,24 @@
 	 align-items: center;
 	width: 270px;
 	height: 60px;
-	background: #FFFFFF;
-	box-shadow: 0px 0px 8px #CEDAEB;
+	border: none;
 	border-radius: 110px;
 	margin: 30px 0;
 	cursor: pointer;
 }
-.box_for_button_price:hover {
-    background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
-    border: 2px solid #7063D2;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 8px #CEDAEB;
-    border-radius: 40px;
-	cursor: pointer;
-}
-
-.box_for_button_price:active {
-	background: linear-gradient(92.21deg, #7E57F2 13.23%, #6645E1 82.09%);
-	border: 2px solid #6E63C1;
-	box-sizing: border-box;
-	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 0px 0px 15px #BDCCE3;
-	border-radius: 40px;
-	cursor: pointer;
-}
  /* КНОПАШКА "ЗАПИСАТЬСЯ" */
 .button_price {
-    font-family: 'Open Sans';
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: url(../img/stroke_button_price.svg),#FFFFFF;
+	background-size: 100%,contain;
+	background-repeat: no-repeat;
+	background-position: center;
+    box-shadow: 0px 0px 8px #CEDAEB;
+    border-radius: 110px;
+	cursor: pointer;
+	font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -914,42 +906,28 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: #8273F1;
-	background: #FFFFFF;
-	width: 260px;
-	height: 50px;
-	border: 1px dashed #9584FE;
-	box-sizing: border-box;
-	filter: drop-shadow(0px 0px 4px #6755E3);
-	border-radius: 110px;
-	cursor: pointer;
  }
  .button_price:hover {
-    border: 1px dashed #FFFFFF;
+    background: url(../img/stroke_button_price_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+    border: 2px solid #7063D2;
     box-sizing: border-box;
-    filter: drop-shadow(0px 0px 4px #7263E6);
-    border-radius: 110px;
-	font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 29px;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-	background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+    box-shadow: 0px 0px 8px #CEDAEB;
+    border-radius: 40px;
+	color: #FFFFFF;
  }
  .button_price:active {
-    border: 1px dashed #FFFFFF;
+    background: url(../img/stroke_button_price_active.svg),linear-gradient(92.21deg, #7E57F2 13.23%, #6645E1 82.09%);
+    border: 2px solid #6E63C1;
     box-sizing: border-box;
-    filter: drop-shadow(0px 0px 4px #493BB7);
-    border-radius: 110px;
-	font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 29px;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-	background: linear-gradient(92.21deg, #7E57F2 13.23%, #6645E1 82.09%);
+    box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 0px 0px 15px #BDCCE3;
+    border-radius: 40px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFFFFF;
  }
 
  /* КНОПАЧКА "ЗАПИСАТЬСЯ":конец */
@@ -1053,7 +1031,7 @@ padding: 4px;
 	justify-content: center;
 	margin-top: 23px;
  }
- .button_form {
+ .box_for_button_form button {
 	width: 370px;
 	height: 60px;
 	background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
@@ -1071,7 +1049,22 @@ padding: 4px;
 	cursor: pointer;
 
 }
-.button_form:active { 
+.box_for_button_form button:hover {
+	background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
+	border: 2px solid #7263E6;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB ;
+	border-radius: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+.button_form--push { 
 	background: linear-gradient(92.21deg, #7E57F2 13.23%, #6645E1 82.09%) !important;
 	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 0px 0px 15px #BDCCE3 !important;
 	border-radius: 40px !important;
@@ -1083,25 +1076,11 @@ padding: 4px;
   letter-spacing: 0.08em;
   color: #FFFFFF;
 }
-	.button_form:hover {
-		background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
-		border: 2px solid #7263E6;
-		box-sizing: border-box;
-		box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
-		border-radius: 40px;
- 	font-family: 'Open Sans';
- 	font-style: normal;
- 	font-weight: bold;
- 	font-size: 21px;
- 	line-height: 29px;
- 	text-align: center;
- 	letter-spacing: 0.08em;
- 	color: #FFFFFF;
- }
- .button_form2 {
+	
+.button_form2 {
 	width: 370px;
 	height: 60px;
-	background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
+	background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%) !important;
 	border: 2px solid #7263E6;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 20px 10px 30px #CEDAEB;
@@ -1117,7 +1096,7 @@ padding: 4px;
 	padding: 10px;
 
 }
-.button_form2:active { 
+.button_form2--push { 
 	background: linear-gradient(92.21deg, #7E57F2 13.23%, #6645E1 82.09%) !important;
 	box-shadow: 0px 0px 8px rgba(87, 152, 251, 0.9), 0px 0px 15px #BDCCE3 !important;
 	border-radius: 40px !important;
@@ -1129,7 +1108,7 @@ padding: 4px;
   letter-spacing: 0.08em;
   color: #FFFFFF;
 }
-	.button_form2:hover {
+.button_form2:hover{
 		background: linear-gradient(92.21deg, #8A64F9 13.23%, #8A64F9 13.24%, #7652F4 82.09%);
 		border: 2px solid #7263E6;
 		box-sizing: border-box;
@@ -1151,7 +1130,6 @@ padding: 4px;
 	font-size: 18px;
 	line-height: 25px;
 	letter-spacing: 0.01em;
-	text-indent: 30px;
 	color: #A4A4A4;
  }
  .heading_subs_2 {
@@ -1212,6 +1190,7 @@ padding: 4px;
  }
 
  .box_for_name {
+	 padding-top: 13px;
  	text-align: center;
  }
 
@@ -1475,12 +1454,11 @@ padding: 4px;
 	margin-right: 5px;
 	cursor: pointer;
 	background: url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg),#FFFFFF;
-	background-position:left 27px center,center;
+	background-position:right 27px center,left bottom;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 50%;
-  transform: rotate(180deg);
  }
  .box_right_examples {
 	display: flex;
@@ -1494,45 +1472,46 @@ padding: 4px;
 	margin-left: 5px;
 	cursor: pointer;
 	background:url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg), #FFFFFF;
-	background-position:left 27px center,center;
+	background-position:right 27px center,left bottom;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
+  transform: rotate(180deg);
  }
  .button_left_examples:hover {
-	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background: url(../img/arrow_hover.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position: left 27px center,center,center;
+	background-position: right 27px center,left bottom,center;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
 	/* transition: all 1s; */
  }
  .button_left_examples:active {
-	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background: url(../img/arrow_active.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
     box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
   border-radius: 40px;
  }
  .button_right_examples:hover {
-	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background: url(../img/arrow_hover.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
     box-shadow: 0px 0px 8px #CEDAEB;
     border-radius: 40px;
  }
  .button_right_examples:active {
-	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background: url(../img/arrow_active.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
     box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
   border-radius: 40px;
  }
  /* Примеры работ . конец */
@@ -1704,28 +1683,28 @@ padding: 4px;
 	margin-bottom: 177px;
 	cursor: pointer;
 	background: url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg),#FFFFFF;
-	background-position:left 27px center,center;
+	background-position:right 27px center,left bottom;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 50%;
-  transform: rotate(180deg);
+  
  }
  .button_left_reviews:hover {
-  background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+  background: url(../img/arrow_hover.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
  }
  .button_left_reviews:active {
-	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background: url(../img/arrow_active.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
   box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
   border-radius: 40px;
  }
 
@@ -1741,27 +1720,28 @@ padding: 4px;
 	margin-bottom: 177px;
 	cursor: pointer;
 	background: url(../img/arrow_fiolet.svg),url(../img/stroke_fiolet.svg),#FFFFFF;
-	background-position:left 27px center,center;
+	background-position:right 27px center,left bottom;
 	background-size: auto,100%,contain;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 50%;
+  transform: rotate(180deg);
  }
  .button_right_reviews:hover {
-	background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+	background: url(../img/arrow_hover.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
   box-shadow: 0px 0px 8px #CEDAEB;
   border-radius: 40px;
  }
  .button_right_reviews:active {
-  background: url(../img/arrow_white.svg),url(../img/stroke_white.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+  background: url(../img/arrow_active.svg),url(../img/stroke_for_button_exaples_hover.svg),linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
   box-shadow: 0px 0px 8px #060324,0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
 	filter: drop-shadow(0px 0px 4px #5786FB);
 	background-size: auto,100%;
 	background-repeat: no-repeat;
-	background-position:left 27px center,center,center;
+	background-position:right 27px center,left bottom,center;
   border-radius: 40px;
  }
  /* Отзывы клиентов . конец */

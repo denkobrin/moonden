@@ -1,6 +1,6 @@
 <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_51_220)">
-<circle cx="34.291" cy="34.8198" r="29.5" stroke="#9584FE" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
+<circle cx="34.291" cy="34.8198" r="29.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
 </g>
 <defs>
 <filter id="filter0_d_51_220" x="0.291016" y="0.819824" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
