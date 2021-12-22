@@ -48,7 +48,7 @@
  	display: flex;
  	flex-wrap: wrap;
  	align-items: center;
- 	justify-content: space-around;
+ 	justify-content: space-between;
 	padding-top: 6px;
  }
 
@@ -110,13 +110,13 @@
  }
  .tel_button:hover {
   background: linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
-  border: 2px solid #6755E3;
-  box-shadow: 0px 0px 8px #CEDAEB;
+  box-shadow: 0px 0px 8px #6755E3;
+  cursor: pointer;
  }
  .tel_button:active {
   background: linear-gradient(92.21deg, #8070E8 13.23%, #5E4FD5 82.09%);
-  border: 2px solid #6755E3;
   box-shadow: 0px 0px 2px #687C99;
+  cursor: pointer;
  }
 
  .tel_img {
@@ -1171,7 +1171,7 @@ padding: 4px;
  .master_kate {
  	width: 370px;
  	height: 204px;
- 	background: url(../img/Kate.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background: url(../img/Kate.svg), url(../img/Ellipse.svg), url(../img/Rectangle.svg), url(../img/white_bg_kate.png);
  	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
  	background-repeat: no-repeat;
  	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 6px, center;
@@ -1200,7 +1200,7 @@ padding: 4px;
  	align-items: flex-end;
  	width: 370px;
  	height: 204px;
- 	background: url(../img/Jana.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background: url(../img/Jana.svg), url(../img/Ellipse.svg), url(../img/Rectangle.svg), url(../img/white_bg_kate.png);
  	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
  	background-repeat: no-repeat;
  	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 6px, center;
@@ -1223,7 +1223,7 @@ padding: 4px;
  	align-items: flex-end;
  	width: 370px;
  	height: 204px;
- 	background: url(../img/Tatiana.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background: url(../img/Tatiana.svg), url(../img/Ellipse.svg), url(../img/Rectangle.svg), url(../img/white_bg_kate.png);
  	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
  	background-repeat: no-repeat;
  	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 6px, center;
@@ -1254,7 +1254,7 @@ padding: 4px;
  	align-items: flex-end;
  	width: 370px;
  	height: 204px;
- 	background: url(../img/Elena1.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background: url(../img/Elena1.svg), url(../img/Ellipse.svg), url(../img/Rectangle.svg), url(../img/white_bg_kate.png);
  	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
  	background-repeat: no-repeat;
  	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 6px, center;
@@ -1277,7 +1277,7 @@ padding: 4px;
  	align-items: flex-end;
  	width: 370px;
  	height: 204px;
- 	background: url(../img/Julia.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background: url(../img/Julia.svg), url(../img/Ellipse.svg), url(../img/Rectangle.svg), url(../img/white_bg_kate.png);
  	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
  	background-repeat: no-repeat;
  	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 6px, center;
@@ -1300,7 +1300,7 @@ padding: 4px;
  	align-items: flex-end;
  	width: 370px;
  	height: 204px;
- 	background: url(../img/Elena2.png), url(../img/Ellipse.png), url(../img/Rectangle.png), url(../img/white_bg_kate.png);
+ 	background: url(../img/Elena2.svg), url(../img/Ellipse.svg), url(../img/Rectangle.svg), url(../img/white_bg_kate.png);
  	background-size: 86.5px 86.5px, 98.5px 98.5px, 358px 134px, 100%;
  	background-repeat: no-repeat;
  	background-position: left 141px top 11px, left 135px top 6px, left 5px bottom 6px, center;
@@ -1375,7 +1375,7 @@ padding: 4px;
  .button_shell {
 	min-width: 217px;
 	min-height: 50px;
-	background: url(../img/stroke_for_button_exaples.png),#FFFFFF;
+	background: url(../img/stroke_button_shell.svg),#FFFFFF;
 	background-size: 207px 40px,auto;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -1392,8 +1392,8 @@ padding: 4px;
 	border: none;
  }
  .button_shell:hover {
-  background: url(../img/stroke_for_button_exaples_hover.png),#FFFFFF;
-	background-size: 207px 40px,auto;
+  background: url(../img/stroke_button_shell_hover.svg),#FFFFFF;
+	background-size: 100%,auto;
 	background-position:center;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #CEDAEB;
@@ -1409,8 +1409,8 @@ padding: 4px;
  }
  /* .box_for_examples .box_left_exaples .button_shell:active - чтобы увеличить вес стилей. */
  .button_shell:active {
-	background: url(../img/stroke_for_button_exaples_hover.png),#FFFFFF;
-	background-size: 207px 40px,auto;
+	background: url(../img/stroke_button_shell_hover.svg),#FFFFFF;
+	background-size: 100%,auto;
 	background-position:center;
 	background-repeat: no-repeat;
   box-shadow: 0px 0px 8px #8CB6F5;
@@ -1827,7 +1827,7 @@ textarea {
   letter-spacing: 0.01em;
   color: #111111;
 	resize: vertical;
-	padding: 20px;
+	padding:20px 30px;
 }
 textarea:hover {
 	border: 1px dashed #8E7DF8;
