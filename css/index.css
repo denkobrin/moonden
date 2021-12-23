@@ -1534,13 +1534,13 @@
  }
 
  .button_left_examples:active {
- 	transition: background-position 0.2s;
+ 	/* transition: background-position 0.2s; */
  	background: url(../img/arrow_hover.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
  	box-shadow: 0px 0px 8px #060324, 0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
  	filter: drop-shadow(0px 0px 4px #5786FB);
  	background-size: auto, 100%;
  	background-repeat: no-repeat;
- 	background-position: right 35px center, left bottom, center;
+ 	background-position: right 27px center, left bottom, center;
  	border-radius: 40px;
  }
 
@@ -1554,13 +1554,13 @@
  }
 
  .button_right_examples:active {
- 	transition: background-position 0.2s;
- 	background: url(../img/arrow_active.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+ 	/* transition: background-position 0.2s; */
+ 	background: url(../img/arrow_hover.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
  	box-shadow: 0px 0px 8px #060324, 0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
  	filter: drop-shadow(0px 0px 4px #5786FB);
  	background-size: auto, 100%;
  	background-repeat: no-repeat;
- 	background-position: right 35px center, left bottom, center;
+ 	background-position: right 27px center, left bottom, center;
  	border-radius: 40px;
  }
 
@@ -1632,7 +1632,7 @@
  	background: url(../img/review_photo.png);
  	background-size: 152px 155px;
  	background-repeat: no-repeat;
- 	background-position: top left 18px;
+ 	background-position: top right;
  }
 
  .box_for_text_review {
@@ -1769,13 +1769,13 @@
  }
 
  .button_left_reviews:active {
- 	transition: background-position 0.2s;
- 	background: url(../img/arrow_active.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+ 	/* transition: background-position 0.2s; */
+ 	background: url(../img/arrow_hover.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
  	box-shadow: 0px 0px 8px #060324, 0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
  	filter: drop-shadow(0px 0px 4px #5786FB);
  	background-size: auto, 100%;
  	background-repeat: no-repeat;
- 	background-position: right 35px center, left bottom, center;
+ 	background-position: right 27px center, left bottom, center;
  	border-radius: 40px;
  }
 
@@ -1810,13 +1810,13 @@
  }
 
  .button_right_reviews:active {
- 	transition: background-position 0.2s;
- 	background: url(../img/arrow_active.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
+ 	/* transition: background-position 0.2s; */
+ 	background: url(../img/arrow_hover.svg), url(../img/stroke_for_button_exaples_hover.svg), linear-gradient(92.21deg, #9484FD 13.23%, #7263E6 82.09%);
  	box-shadow: 0px 0px 8px #060324, 0px 0px 4px #657389, inset 0px 4px 24px #584CCA;
  	filter: drop-shadow(0px 0px 4px #5786FB);
  	background-size: auto, 100%;
  	background-repeat: no-repeat;
- 	background-position: right 35px center, left bottom, center;
+ 	background-position: right 27px center, left bottom, center;
  	border-radius: 40px;
  }
 
